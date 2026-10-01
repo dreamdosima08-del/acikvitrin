@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Açık Vitrin — Astrologlar, Koçlar ve Küçük İşletmeler için Web Sitesi</title>
+<meta name="description" content="Astrologlardan kuaförlere, küçük işletmelerin Instagram'dan taşıp güven veren, Google'da bulunan bir web sitesine kavuşması birkaç gün sürer. Sabit kapsam, şeffaf fiyat, hızlı teslim.">
+<meta name="keywords" content="astrolog web sitesi, küçük işletme web sitesi, esnaf web sitesi, kuaför web sitesi, holistik koç web sitesi, dijital kartvizit, hazır web sitesi paketi, uygun fiyatlı web tasarım">
+<meta name="author" content="Açık Vitrin">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://acikvitrin.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Açık Vitrin">
+<meta property="og:title" content="Açık Vitrin — Astrologlar, Koçlar ve Küçük İşletmeler için Web Sitesi">
+<meta property="og:description" content="Instagram'ın var, peki gerçek bir web siteniz var mı? Astrologlar, koçlar ve küçük işletmeler için hızlı, uygun fiyatlı ve Google'da bulunan web siteleri.">
+<meta property="og:url" content="https://acikvitrin.com/">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://acikvitrin.com/og-image.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Açık Vitrin — Astrologlar, Koçlar ve Küçük İşletmeler için Web Sitesi">
+<meta name="twitter:description" content="Instagram'ın var, peki gerçek bir web siteniz var mı? Hızlı, uygun fiyatlı ve Google'da bulunan web siteleri.">
+<meta name="twitter:image" content="https://acikvitrin.com/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #12141c;
+    --bg-elevated: #1b1e2a;
+    --bg-elevated-2: #222634;
+    --amber: #e7a33e;
+    --amber-soft: #f0c17a;
+    --teal: #5fc1b8;
+    --text: #f3efe7;
+    --text-muted: #9aa0b4;
+    --line: rgba(243,239,231,0.12);
+    --line-strong: rgba(243,239,231,0.22);
+    --radius: 14px;
+    --shadow-lamp: 0 0 40px rgba(231,163,62,0.18);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Manrope', sans-serif;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    line-height:1.12;
+    margin:0;
+  }
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;list-style:none;}
+  img{max-width:100%;display:block;}
+
+  ::selection{background:var(--amber);color:#12141c;}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--amber);
+    outline-offset:3px;
+    border-radius:4px;
+  }
+
+  .wrap{
+    max-width:1120px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  /* ---------- Shutter intro ---------- */
+  .shutter{
+    position:fixed;
+    inset:0;
+    z-index:200;
+    pointer-events:none;
+  }
+  .shutter-panel{
+    position:absolute;
+    left:0; right:0;
+    height:52%;
+    background:
+      repeating-linear-gradient(
+        180deg,
+        #23262f 0px, #23262f 10px,
+        #1a1c24 10px, #1a1c24 12px
+      );
+    box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
+  }
+  .shutter-top{ top:0; animation: shutterUp 1s 0.15s cubic-bezier(.65,0,.35,1) forwards; }
+  .shutter-bottom{ bottom:0; animation: shutterDown 1s 0.15s cubic-bezier(.65,0,.35,1) forwards; }
+  .shutter-top::after, .shutter-bottom::after{
+    content:"";
+    position:absolute;
+    left:0; right:0;
+    height:3px;
+    background:linear-gradient(90deg, transparent, var(--amber), transparent);
+    opacity:0.7;
+  }
+  .shutter-top::after{ bottom:0; }
+  .shutter-bottom::after{ top:0; }
+
+  @keyframes shutterUp{ to{ transform:translateY(-100%); } }
+  @keyframes shutterDown{ to{ transform:translateY(100%); } }
+
+  @media (prefers-reduced-motion: reduce){
+    .shutter{ display:none; }
+  }
+
+  /* ---------- Nav ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    backdrop-filter:blur(10px);
+    background:rgba(18,20,28,0.78);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 24px;
+  }
+  .logo{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    font-size:1.15rem;
+    letter-spacing:0.01em;
+    display:flex;
+    align-items:center;
+    gap:8px;
+  }
+  .logo-mark{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--amber);
+    box-shadow:0 0 10px 2px rgba(231,163,62,0.65);
+  }
+  .nav-links{
+    display:none;
+    gap:28px;
+    font-size:0.92rem;
+    color:var(--text-muted);
+  }
+  .nav-links a:hover{ color:var(--text); }
+  @media (min-width:760px){ .nav-links{ display:flex; } }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:11px 20px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:0.92rem;
+    white-space:nowrap;
+    transition:transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn-primary{
+    background:var(--amber);
+    color:#1a1206;
+    box-shadow:0 6px 20px rgba(231,163,62,0.25);
+  }
+  .btn-primary:hover{ transform:translateY(-1px); box-shadow:0 10px 26px rgba(231,163,62,0.35); }
+  .btn-ghost{
+    border:1px solid var(--line-strong);
+    color:var(--text);
+  }
+  .btn-ghost:hover{ border-color:var(--amber); color:var(--amber-soft); }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:88px 0 72px;
+    position:relative;
+  }
+  .hero-grid{
+    display:grid;
+    gap:48px;
+    align-items:center;
+  }
+  @media (min-width:900px){
+    .hero-grid{ grid-template-columns:1.1fr 0.9fr; }
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.76rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--amber-soft);
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:20px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px; height:1px;
+    background:var(--amber);
+  }
+  .hero h1{
+    font-size:clamp(2.1rem, 4.6vw, 3.4rem);
+    letter-spacing:-0.01em;
+    max-width:14ch;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--amber-soft);
+  }
+  .hero p.lead{
+    margin-top:22px;
+    font-size:1.08rem;
+    color:var(--text-muted);
+    max-width:46ch;
+  }
+  .hero-cta{
+    margin-top:32px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+
+  /* window mock */
+  .window{
+    position:relative;
+    background:var(--bg-elevated);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px;
+    box-shadow:var(--shadow-lamp), 0 30px 60px rgba(0,0,0,0.35);
+  }
+  .window-frame{
+    display:flex;
+    gap:6px;
+    margin-bottom:18px;
+  }
+  .window-frame span{
+    width:9px;height:9px;border-radius:50%;
+    background:var(--line-strong);
+  }
+  .window-body{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .window-row{
+    height:12px;
+    border-radius:6px;
+    background:linear-gradient(90deg, var(--bg-elevated-2), rgba(255,255,255,0.03));
+  }
+  .window-row.w-70{ width:70%; }
+  .window-row.w-50{ width:50%; }
+  .window-row.w-90{ width:90%; }
+  .window-row.tall{ height:64px; border-radius:10px; margin-top:6px; background:linear-gradient(135deg, rgba(231,163,62,0.16), rgba(95,193,184,0.12)); border:1px dashed var(--line-strong); }
+  .window-caption{
+    margin-top:16px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:0.72rem;
+    color:var(--text-muted);
+    display:flex;
+    justify-content:space-between;
+  }
+  .lamp-dot{
+    display:inline-block;
+    width:6px;height:6px;
+    border-radius:50%;
+    background:var(--teal);
+    box-shadow:0 0 8px 1px rgba(95,193,184,0.7);
+    margin-right:6px;
+  }
+
+  /* ---------- Section shell ---------- */
+  section{ padding:76px 0; }
+  .section-head{
+    max-width:52ch;
+    margin-bottom:44px;
+  }
+  .section-head .eyebrow{ margin-bottom:14px; }
+  .section-head h2{
+    font-size:clamp(1.6rem, 3.2vw, 2.2rem);
+  }
+  .section-head p{
+    margin-top:14px;
+    color:var(--text-muted);
+    font-size:1rem;
+  }
+
+  .divider{
+    border:none;
+    border-top:1px solid var(--line);
+  }
+
+  /* ---------- Why cards ---------- */
+  .why-grid{
+    display:grid;
+    gap:20px;
+  }
+  @media (min-width:760px){ .why-grid{ grid-template-columns:repeat(3,1fr); } }
+  .why-card{
+    background:var(--bg-elevated);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px;
+    transition:border-color 0.2s ease, transform 0.2s ease;
+  }
+  .why-card:hover{ border-color:rgba(231,163,62,0.4); transform:translateY(-2px); }
+  .why-card h3{
+    font-size:1.08rem;
+    font-weight:600;
+    margin-bottom:10px;
+  }
+  .why-card p{ color:var(--text-muted); font-size:0.94rem; }
+
+  /* ---------- Scope list ---------- */
+  .scope{
+    display:grid;
+    gap:36px;
+  }
+  @media (min-width:900px){ .scope{ grid-template-columns:1fr 1fr; } }
+  .scope-list li{
+    display:flex;
+    gap:14px;
+    padding:14px 0;
+    border-bottom:1px solid var(--line);
+    font-size:0.98rem;
+  }
+  .scope-list li:last-child{ border-bottom:none; }
+  .scope-list .check{
+    flex:none;
+    width:20px;height:20px;
+    border-radius:50%;
+    background:rgba(95,193,184,0.15);
+    color:var(--teal);
+    display:flex;align-items:center;justify-content:center;
+    font-size:0.7rem;
+    margin-top:2px;
+  }
+  .scope-note{
+    background:var(--bg-elevated);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px;
+    align-self:start;
+  }
+  .scope-note h3{ font-size:1.05rem; margin-bottom:10px; }
+  .scope-note p{ color:var(--text-muted); font-size:0.94rem; }
+
+  /* ---------- Process ---------- */
+  .process{
+    display:grid;
+    gap:0;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  @media (min-width:760px){ .process{ grid-template-columns:repeat(3,1fr); } }
+  .process-step{
+    padding:30px 26px;
+    border-bottom:1px solid var(--line);
+    background:var(--bg-elevated);
+  }
+  @media (min-width:760px){
+    .process-step{ border-bottom:none; border-right:1px solid var(--line); }
+    .process-step:last-child{ border-right:none; }
+  }
+  .process-num{
+    font-family:'JetBrains Mono', monospace;
+    color:var(--amber);
+    font-size:0.8rem;
+    letter-spacing:0.08em;
+  }
+  .process-step h3{
+    margin-top:12px;
+    font-size:1.1rem;
+  }
+  .process-step p{
+    margin-top:10px;
+    color:var(--text-muted);
+    font-size:0.94rem;
+  }
+
+  /* ---------- Audience ---------- */
+  .audience-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+  @media (min-width:640px){ .audience-grid{ grid-template-columns:repeat(3,1fr); } }
+  .audience-tag{
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:12px 18px;
+    text-align:center;
+    font-size:0.9rem;
+    color:var(--text-muted);
+    transition:border-color 0.2s ease, color 0.2s ease;
+  }
+  .audience-tag:hover{ border-color:var(--amber); color:var(--text); }
+
+  /* ---------- Pricing ---------- */
+  .price-grid{
+    display:grid;
+    gap:20px;
+  }
+  @media (min-width:760px){ .price-grid{ grid-template-columns:1fr 1fr; } }
+  .price-card{
+    background:linear-gradient(160deg, var(--bg-elevated), var(--bg-elevated-2));
+    border:1px solid var(--line-strong);
+    border-radius:var(--radius);
+    padding:36px;
+    display:grid;
+    gap:24px;
+  }
+  @media (min-width:760px){ .price-card{ grid-template-columns:1.2fr 0.8fr; align-items:center; } }
+  .price-card h3{ font-size:1.3rem; }
+  .price-card p{ color:var(--text-muted); margin-top:10px; font-size:0.96rem; }
+  .price-tag{
+    font-family:'JetBrains Mono', monospace;
+    color:var(--amber-soft);
+    font-size:0.85rem;
+  }
+  .price-cta{ justify-self:start; }
+  @media (min-width:760px){ .price-cta{ justify-self:end; } }
+
+  /* ---------- Footer / contact ---------- */
+  footer{
+    padding:70px 0 46px;
+    border-top:1px solid var(--line);
+  }
+  .footer-grid{
+    display:flex;
+    flex-direction:column;
+    gap:34px;
+  }
+  @media (min-width:760px){
+    .footer-grid{ flex-direction:row; justify-content:space-between; align-items:flex-end; }
+  }
+  .footer-cta h2{ font-size:clamp(1.5rem,3.4vw,2rem); max-width:16ch; }
+  .footer-links{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-size:0.92rem;
+    color:var(--text-muted);
+  }
+  .footer-links a{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .footer-links a:hover{ color:var(--amber-soft); }
+  .footer-links .icon{
+    width:19px;
+    height:19px;
+    flex:none;
+    color:var(--teal);
+    transition:color 0.2s ease;
+  }
+  .footer-links a:hover .icon{ color:var(--amber); }
+  .footer-bottom{
+    margin-top:50px;
+    padding-top:22px;
+    border-top:1px solid var(--line);
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    justify-content:space-between;
+    font-size:0.78rem;
+    color:var(--text-muted);
+  }
+
+  /* scroll reveal */
+  .reveal{
+    opacity:0;
+    transform:translateY(16px);
+    transition:opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal.is-visible{
+    opacity:1;
+    transform:translateY(0);
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Açık Vitrin",
+  "description": "Astrologlar, holistik koçlar ve küçük işletmeler için hazır kapsamlı, uygun fiyatlı web sitesi tasarım ve kurulum hizmeti.",
+  "url": "https://acikvitrin.com/",
+  "email": "dreamdosima08@gmail.com",
+  "areaServed": "TR",
+  "priceRange": "$$",
+  "knowsAbout": ["web tasarım", "dijital kartvizit", "kurumsal web sitesi", "SEO"],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Başlangıç Vitrini",
+      "description": "Ana sayfa, hizmetler, WhatsApp/Instagram yönlendirme, harita, galeri, temel SEO ve mobil uyumlu tasarım içeren tek sayfalık dijital kartvizit sitesi.",
+      "price": "4500",
+      "priceCurrency": "TRY"
+    },
+    {
+      "@type": "Offer",
+      "name": "Genişletilmiş Vitrin",
+      "description": "Çoklu sayfa: ayrı hizmetler sayfası, blog/yazı alanı ve daha geniş galeri içeren web sitesi.",
+      "price": "7500",
+      "priceCurrency": "TRY"
+    }
+  ],
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "Astrologlar, holistik koçlar, kuaförler, kafeler, danışmanlar, yerel esnaf"
+  }
+}
+</script>
+</head>
+<body>
+
+<div class="shutter" aria-hidden="true">
+  <div class="shutter-panel shutter-top"></div>
+  <div class="shutter-panel shutter-bottom"></div>
+</div>
+
+<header>
+  <nav class="nav wrap">
+    <a href="#top" class="logo"><span class="logo-mark"></span>Açık Vitrin</a>
+    <div class="nav-links">
+      <a href="#kapsam">Kapsam</a>
+      <a href="#surec">Süreç</a>
+      <a href="#kimler-icin">Kimler için</a>
+      <a href="#fiyat">Fiyat</a>
+    </div>
+    <a class="btn btn-primary" href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Web Sitesi Tasarım &amp; Kurulum Hizmeti</span>
+        <h1>Instagram'ın var. Peki gerçek bir <em>web siteniz</em> var mı?</h1>
+        <p class="lead">Astrologlar, holistik koçlar ve küçük işletmeler için web sitesi tasarlıyor, kuruyor ve yayına alıyoruz. Instagram'dan taşıp güven veren, Google'da bulunan bir web sitesine kavuşmanız birkaç gün sürer. Sabit kapsam, net fiyat, uzun ajans süreçleri yok.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+          <a class="btn btn-ghost" href="#kapsam">Kapsamı Gör</a>
+        </div>
+      </div>
+      <div class="window reveal">
+        <div class="window-frame"><span></span><span></span><span></span></div>
+        <div class="window-body">
+          <div class="window-row w-50"></div>
+          <div class="window-row w-90"></div>
+          <div class="window-row w-70"></div>
+          <div class="window-row tall"></div>
+        </div>
+        <div class="window-caption">
+          <span><span class="lamp-dot"></span>web sitesi önizlemesi</span>
+          <span>mobil uyumlu</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="neden">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Neden</span>
+        <h2>Instagram tek başına yeterli değil</h2>
+        <p>Takipçi sayınız ne olursa olsun, sizi ilk kez duyan biri genellikle önce Google'a bakar. Orada karşısına çıkan şey, kararını etkiler.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <h3>Postlar kaybolur, site kalır</h3>
+          <p>Instagram akışı hızlı unutur. Web sitesi hizmetlerinizi, fiyatlarınızı ve iletişim bilginizi her zaman aynı yerde tutar.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>Güven meselesi</h3>
+          <p>Gerçek bir web sitesi olan bir işletme, sadece Instagram hesabı olana göre daha ciddi ve kalıcı görünür.</p>
+        </div>
+        <div class="why-card reveal">
+          <h3>Google'da bulunmak</h3>
+          <p>"Artvin'de astrolog" ya da "Trabzon'da kuaför" diye arayan biri, Instagram hesabınızı değil, web sitenizi bulur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider wrap">
+
+  <section id="kapsam">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kapsam</span>
+        <h2>Dijital vitrininizde neler var</h2>
+        <p>Karmaşık bir web uygulaması değil; işinizi doğru anlatan, sabit kapsamlı bir tanıtım sitesi.</p>
+      </div>
+      <div class="scope">
+        <ul class="scope-list reveal">
+          <li><span class="check">✓</span>Ana sayfa: işletmeniz, hizmetleriniz, hikayeniz</li>
+          <li><span class="check">✓</span>WhatsApp ve Instagram'a tek tıkla yönlendirme</li>
+          <li><span class="check">✓</span>Harita ve konum entegrasyonu</li>
+          <li><span class="check">✓</span>Fotoğraf galerisi</li>
+          <li><span class="check">✓</span>Google'da bulunmaya hazır temel SEO ayarları</li>
+          <li><span class="check">✓</span>Mobil uyumlu, hızlı yüklenen tasarım</li>
+        </ul>
+        <div class="scope-note reveal">
+          <h3>Domain yenileme ve site bakımı dahil</h3>
+          <p>Kurulumdan sonra siteniz kendi alan adınızda yayında kalır; yıllık domain yenileme ücreti ve sitenizin teknik takibi/bakımı da kapsama dahildir. Ek, gizli bir maliyet yok.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider wrap">
+
+  <section id="surec">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Süreç</span>
+        <h2>Üç adımda yayında</h2>
+      </div>
+      <div class="process reveal">
+        <div class="process-step">
+          <span class="process-num">01</span>
+          <h3>Anlatın</h3>
+          <p>İşletmenizi, hizmetlerinizi ve varsa görsellerinizi paylaşın. Kısa bir mesaj yeterli.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">02</span>
+          <h3>Tasarlayalım</h3>
+          <p>Size özel taslağı hazırlayıp gösteririz; birlikte netleştiririz.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">03</span>
+          <h3>Yayında</h3>
+          <p>Onay sonrası siteniz kendi alan adınızda canlıya alınır.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider wrap">
+
+  <section id="kimler-icin">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Kimler için</span>
+        <h2>Bu vitrin kimin için açık</h2>
+        <p>Instagram'ı olan ama internette kendi köşesi olmayan herkes için.</p>
+      </div>
+      <div class="audience-grid reveal">
+        <div class="audience-tag">Astrologlar &amp; holistik koçlar</div>
+        <div class="audience-tag">Kuaför &amp; güzellik salonları</div>
+        <div class="audience-tag">Kafe &amp; restoranlar</div>
+        <div class="audience-tag">Danışmanlık &amp; eğitim</div>
+        <div class="audience-tag">El emeği / butik üretim</div>
+        <div class="audience-tag">Yerel esnaf</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider wrap">
+
+  <section id="fiyat">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Fiyat</span>
+        <h2>Şeffaf, sabit kapsamlı fiyatlandırma</h2>
+        <p>Gizli maliyet yok. Kurulum tek seferlik, domain ve barındırma bakımı yıllık yenilenir.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price-card reveal">
+          <div>
+            <h3>Başlangıç Vitrini</h3>
+            <p>Tek sayfa: ana sayfa, hizmetler, iletişim ve galeri. Yukarıdaki kapsamın tamamı dahildir.</p>
+            <p class="price-tag" style="margin-top:16px;">4.500 TL kurulum · yılda 600 TL domain yenileme + bakım</p>
+          </div>
+          <a class="btn btn-primary price-cta" href="https://wa.me/905434290908" target="_blank" rel="noopener">Teklif İste</a>
+        </div>
+        <div class="price-card reveal">
+          <div>
+            <h3>Genişletilmiş Vitrin</h3>
+            <p>Çoklu sayfa: ayrı hizmetler sayfası, blog/yazı alanı ve daha geniş galeri.</p>
+            <p class="price-tag" style="margin-top:16px;">7.500 TL kurulum · yılda 750 TL domain yenileme + bakım</p>
+          </div>
+          <a class="btn btn-primary price-cta" href="https://wa.me/905434290908" target="_blank" rel="noopener">Teklif İste</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="iletisim">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-cta reveal">
+        <span class="eyebrow">İletişim</span>
+        <h2>Vitrininizi birlikte açalım</h2>
+      </div>
+      <div class="footer-links reveal">
+        <a href="https://wa.me/905434290908" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.92 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.67c2.23 0 4.32.87 5.9 2.45a8.23 8.23 0 0 1 2.43 5.85c0 4.56-3.72 8.27-8.29 8.27a8.27 8.27 0 0 1-4.21-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.56 3.72-8.27 8.29-8.27M8.53 7.13c-.16 0-.43.06-.65.31s-.86.84-.86 2.05.88 2.38 1 2.54 1.74 2.77 4.28 3.79c2.12.85 2.55.68 3.01.64.46-.04 1.49-.61 1.7-1.19.21-.59.21-1.09.14-1.19s-.25-.16-.52-.29-1.6-.79-1.85-.88-.43-.14-.61.14-.7.88-.86 1.06-.32.2-.59.06a7.4 7.4 0 0 1-2.18-1.35 8.17 8.17 0 0 1-1.51-1.88c-.16-.27-.02-.42.12-.56.12-.12.27-.32.4-.48.13-.16.17-.27.26-.45.09-.19.04-.35-.02-.49s-.6-1.47-.83-2.01c-.22-.53-.44-.45-.6-.46z"/></svg>WhatsApp: 0543 429 09 08</a>
+        <a href="mailto:dreamdosima08@gmail.com"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="M3 6.5l9 6.2 9-6.2" stroke-linecap="round" stroke-linejoin="round"/></svg>dreamdosima08@gmail.com</a>
+        <a href="https://instagram.com/acik_vitrin" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg>Instagram: @acik_vitrin</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Açık Vitrin</span>
+      <span>Kepenk hep açık.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // scroll reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // remove shutter from flow after animation so it never blocks input
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const shutter = document.querySelector('.shutter');
+      if(shutter) shutter.style.display = 'none';
+    }, 1300);
+  });
+</script>
+
+</body>
+</html>
