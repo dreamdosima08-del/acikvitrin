@@ -107,7 +107,7 @@
   .btn svg{width:18px;height:18px;flex:none;}
 
   /* hero */
-  .hero{padding:72px 0 64px;}
+  .hero{padding:64px 0 64px;}
   .hero-grid{display:grid;gap:52px;align-items:center;}
   @media(min-width:940px){.hero-grid{grid-template-columns:1.05fr .95fr;}}
   .hero h1{font-size:clamp(2.1rem,4.7vw,3.35rem);max-width:17ch;}
@@ -117,18 +117,42 @@
   .assure li{display:flex;align-items:center;gap:8px;}
   .assure li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px rgba(95,193,184,.8);}
 
-  /* vitrin + telefon */
+  /* vitrin: tente + tabela + telefon */
   .vitrin{
-    position:relative;border:1px solid var(--line-strong);border-radius:20px;
-    padding:22px 22px 18px;
-    background:radial-gradient(120% 90% at 50% 0%,rgba(231,163,62,.2),transparent 62%),var(--bg-2);
-    box-shadow:0 30px 60px rgba(0,0,0,.35);
+    position:relative;margin-top:26px;border:1px solid var(--line-strong);border-radius:6px 6px 22px 22px;
+    padding:46px 22px 20px;
+    background:
+      linear-gradient(180deg,rgba(231,163,62,.16),transparent 38%),
+      radial-gradient(90% 60% at 50% 30%,rgba(240,193,122,.12),transparent 70%),
+      var(--bg-2);
+    box-shadow:0 30px 70px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.04);
   }
-  .vitrin::before{ /* tente */
-    content:"";position:absolute;left:18px;right:18px;top:-1px;height:10px;border-radius:0 0 10px 10px;
-    background:repeating-linear-gradient(90deg,var(--amber) 0 22px,#c98626 22px 44px);opacity:.9;
+  .tente{
+    position:absolute;left:-10px;right:-10px;top:-26px;height:46px;border-radius:6px 6px 0 0;
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.18),rgba(0,0,0,0) 30%,rgba(0,0,0,.28) 100%),
+      repeating-linear-gradient(90deg,var(--amber) 0 26px,#f4e7cf 26px 52px);
+    box-shadow:0 10px 18px rgba(0,0,0,.35);
   }
-  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px;}
+  .tente::after{ /* fistonlu kenar */
+    content:"";position:absolute;left:0;right:0;bottom:-12px;height:13px;
+    background:
+      radial-gradient(circle at 13px 0,var(--amber) 12.5px,transparent 13px) 0 0/52px 13px repeat-x,
+      radial-gradient(circle at 39px 0,#f4e7cf 12.5px,transparent 13px) 0 0/52px 13px repeat-x;
+    filter:drop-shadow(0 4px 3px rgba(0,0,0,.3));
+  }
+  .tabela{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    border:1px solid rgba(231,163,62,.45);border-radius:10px;padding:10px 14px;
+    background:linear-gradient(180deg,#1f2230,#171923);box-shadow:inset 0 1px 0 rgba(255,255,255,.05);
+  }
+  .tabela-ust{display:block;font-size:.72rem;color:var(--muted);letter-spacing:.02em;}
+  .tabela-ad{display:block;font-family:'Fraunces',serif;font-weight:600;font-size:1.18rem;color:var(--amber-soft);line-height:1.2;}
+  .acik{flex:none;display:inline-flex;align-items:center;gap:7px;font-size:.78rem;font-weight:700;color:var(--teal);
+    border:1px solid rgba(95,193,184,.45);border-radius:999px;padding:5px 11px;background:rgba(95,193,184,.08);}
+  .acik::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px rgba(95,193,184,.9);animation:nabiz 2.4s ease-in-out infinite;}
+  @keyframes nabiz{50%{opacity:.35}}
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 18px;}
   .tab{
     font:inherit;font-size:.86rem;font-weight:600;color:var(--muted);background:transparent;
     border:1px solid var(--line);border-radius:999px;padding:8px 15px;cursor:pointer;
@@ -137,24 +161,66 @@
   .tab:hover{color:var(--text);border-color:var(--line-strong);}
   .tab[aria-selected="true"]{background:var(--amber);border-color:var(--amber);color:#1a1206;}
   .phone{
-    width:min(100%,290px);margin:0 auto;border-radius:34px;padding:10px;
-    background:#0b0c11;border:1px solid var(--line-strong);
-    box-shadow:0 0 0 1px #000,0 18px 40px rgba(0,0,0,.45);
+    position:relative;width:min(100%,292px);margin:0 auto;border-radius:44px;padding:11px;
+    background:linear-gradient(145deg,#2b2e3a,#0b0c11 40%,#1d1f28);
+    box-shadow:0 0 0 1px #000,inset 0 0 0 1.5px rgba(255,255,255,.08),0 24px 50px rgba(0,0,0,.55);
   }
-  .screen{border-radius:26px;padding:20px 18px 18px;min-height:380px;display:flex;flex-direction:column;gap:14px;
+  .island{position:absolute;top:21px;left:50%;transform:translateX(-50%);width:82px;height:22px;border-radius:999px;background:#000;z-index:2;}
+  .screen{border-radius:34px;padding:12px 16px 12px;min-height:450px;display:flex;flex-direction:column;gap:12px;overflow:hidden;
     background:var(--s-bg);color:var(--s-ink);}
   .screen[hidden]{display:none;}
-  .t-astro{--s-bg:#241f3d;--s-ink:#f1ecff;--s-accent:#e7a33e;--s-card:rgba(255,255,255,.07);--s-cta-ink:#1a1206;}
-  .t-kuafor{--s-bg:#f6ebee;--s-ink:#3a1f2a;--s-accent:#8d3b57;--s-card:rgba(141,59,87,.1);--s-cta-ink:#fff;}
-  .t-kafe{--s-bg:#1e3a33;--s-ink:#f4efe0;--s-accent:#e9c46a;--s-card:rgba(255,255,255,.08);--s-cta-ink:#1b2a22;}
-  .s-top{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;font-weight:700;color:var(--s-accent);}
-  .s-title{font-family:'Fraunces',serif;font-weight:600;font-size:1.45rem;line-height:1.15;margin-top:6px;}
-  .s-sub{font-size:.84rem;opacity:.8;}
-  .s-list{display:grid;gap:8px;margin-top:4px;}
-  .s-list li{background:var(--s-card);border-radius:10px;padding:10px 12px;font-size:.86rem;font-weight:600;}
-  .s-cta{margin-top:auto;text-align:center;background:var(--s-accent);color:var(--s-cta-ink);font-weight:800;font-size:.9rem;padding:12px;border-radius:999px;}
-  .s-foot{display:flex;justify-content:space-between;font-size:.74rem;opacity:.7;}
+  .t-astro{--s-bg:#211c38;--s-ink:#f1ecff;--s-accent:#e7a33e;--s-card:rgba(255,255,255,.07);--s-cta-ink:#1a1206;
+    --s-art:radial-gradient(circle at 72% 38%,#f6e7c4 0 15px,transparent 16px),radial-gradient(circle at 78% 33%,#2c2550 0 14px,transparent 15px),
+      radial-gradient(1px 1px at 20% 30%,#fff,transparent),radial-gradient(1.5px 1.5px at 35% 70%,#fff,transparent),radial-gradient(1px 1px at 55% 20%,#fff,transparent),
+      radial-gradient(1px 1px at 12% 80%,#fff,transparent),radial-gradient(1.5px 1.5px at 88% 78%,#fff,transparent),linear-gradient(160deg,#3a2f6b,#1b1733);}
+  .t-kuafor{--s-bg:#f7eef0;--s-ink:#3a1f2a;--s-accent:#8d3b57;--s-card:rgba(141,59,87,.08);--s-cta-ink:#fff;
+    --s-art:radial-gradient(120% 90% at 85% 10%,rgba(255,255,255,.55),transparent 55%),radial-gradient(80% 120% at 0% 100%,#c9879c,transparent 60%),linear-gradient(135deg,#e9c6cf,#b86a83);}
+  .t-kafe{--s-bg:#1d3631;--s-ink:#f4efe0;--s-accent:#e9c46a;--s-card:rgba(255,255,255,.08);--s-cta-ink:#1b2a22;
+    --s-art:radial-gradient(circle at 72% 55%,#d9a066 0 5px,#5a321b 6px 18px,#f4efe0 19px 23px,rgba(0,0,0,.25) 24px 26px,transparent 27px),radial-gradient(60% 80% at 20% 20%,rgba(233,196,106,.35),transparent 60%),linear-gradient(160deg,#6b4a2e,#2a1a10);}
+  .s-status{display:flex;justify-content:space-between;align-items:center;font-size:.7rem;font-weight:700;padding:2px 8px 0;height:20px;}
+  .sig{display:inline-flex;align-items:flex-end;gap:2px;height:10px;}
+  .sig i{display:block;width:3px;background:currentColor;border-radius:1px;}
+  .sig i:nth-child(1){height:4px}.sig i:nth-child(2){height:7px}.sig i:nth-child(3){height:10px}
+  .s-top{display:flex;justify-content:space-between;align-items:center;font-size:.8rem;font-weight:800;color:var(--s-accent);margin-top:2px;}
+  .s-menu{display:inline-flex;flex-direction:column;gap:4px;}
+  .s-menu i{display:block;width:16px;height:2px;border-radius:2px;background:currentColor;}
+  .s-menu i:last-child{width:10px;margin-left:auto;}
+  .s-art{height:104px;border-radius:16px;background:var(--s-art);position:relative;}
+  .s-pill{position:absolute;left:10px;bottom:10px;font-size:.68rem;font-weight:700;background:rgba(0,0,0,.45);color:#fff;border-radius:999px;padding:4px 10px;}
+  .t-kuafor .s-pill{background:rgba(255,255,255,.75);color:#3a1f2a;}
+  .s-title{font-family:'Fraunces',serif;font-weight:600;font-size:1.32rem;line-height:1.15;}
+  .s-list{display:grid;gap:7px;}
+  .s-list li{display:flex;justify-content:space-between;align-items:center;gap:8px;background:var(--s-card);border-radius:12px;padding:10px 12px;font-size:.84rem;font-weight:600;}
+  .s-list em{white-space:nowrap;font-style:normal;font-size:.72rem;font-weight:700;opacity:.65;}
+  .s-cta{margin-top:auto;text-align:center;background:var(--s-accent);color:var(--s-cta-ink);font-weight:800;font-size:.88rem;padding:12px;border-radius:999px;}
+  .s-bar{display:flex;justify-content:space-around;font-size:.66rem;font-weight:700;opacity:.55;padding-top:8px;border-top:1px solid var(--s-card);}
+  .s-bar .on{opacity:1;color:var(--s-accent);}
   .vitrin-note{margin-top:16px;text-align:center;font-size:.84rem;color:var(--muted);}
+  @media (prefers-reduced-motion:reduce){.acik::before{animation:none;}}
+
+  /* başlık: masaüstü/mobil metin */
+  .h-mob{display:none;}
+  .hero h1 em{font-style:italic;color:var(--amber-soft);}
+  @media(max-width:620px){
+    .h-desk{display:none;}
+    .h-mob{display:inline;}
+    .hero{padding:22px 0 44px;}
+    .hero-grid{gap:0;}
+    .hero-grid>div:first-child{display:contents;}
+    .hero h1{order:1;font-size:clamp(1.75rem,8vw,2.15rem);line-height:1.12;max-width:none;letter-spacing:-.01em;}
+    .lead{order:2;margin-top:12px;font-size:.98rem;line-height:1.55;}
+    .hero-cta{order:3;margin-top:18px;flex-wrap:nowrap;gap:10px;}
+    .hero-cta .btn-lg{flex:1;padding:13px 14px;font-size:.95rem;}
+    .vitrin{order:4;margin-top:38px;padding:34px 14px 16px;}
+    .tente{left:-6px;right:-6px;top:-22px;height:38px;}
+    .tabela{padding:8px 12px;}
+    .tabela-ad{font-size:1.08rem;}
+    .tabs{margin:10px 0 12px;}
+    .tab{padding:7px 13px;font-size:.84rem;}
+    .phone{width:min(100%,268px);}
+    .screen{min-height:430px;}
+    .assure{order:5;margin-top:26px;}
+  }
 
   /* bölümler */
   section{padding:72px 0;}
@@ -424,8 +490,8 @@
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <h1>Instagram'ın var. Sizi arayan müşteri bir web sitesi buluyor mu?</h1>
-        <p class="lead">Açık Vitrin; astrolog, koç, kuaför, kafe ve yerel esnaf için web sitesi tasarlar, kurar ve yayına alır. Birkaç günde, sabit fiyatla, kendi alan adınızda.</p>
+        <h1><span class="h-desk">Instagram'ın var. Sizi arayan müşteri bir web sitesi buluyor mu?</span><span class="h-mob">İşletmeniz için özenle kurulmuş bir <em>dijital vitrin</em>.</span></h1>
+        <p class="lead"><span class="h-desk">Açık Vitrin; astrolog, koç, kuaför, kafe ve yerel esnaf için web sitesi tasarlar, kurar ve yayına alır. Birkaç günde, sabit fiyatla, kendi alan adınızda.</span><span class="h-mob">Astrolog, kuaför, kafe ve yerel esnaf için; birkaç günde, sabit fiyatla yayında.</span></p>
         <div class="hero-cta">
           <a class="btn btn-primary btn-lg" data-wa href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan yaz</a>
           <a class="btn btn-ghost btn-lg" href="#fiyat">Fiyatı gör</a>
@@ -438,35 +504,44 @@
       </div>
 
       <div class="vitrin" id="ornek">
+        <div class="tente" aria-hidden="true"></div>
+        <div class="tabela">
+          <div><span class="tabela-ust">Örnek taslak</span><span class="tabela-ad" id="tabelaAd">Astroloji Atölyesi</span></div>
+          <span class="acik">Açık</span>
+        </div>
         <div class="tabs" role="tablist" aria-label="Örnek taslak seçin">
-          <button class="tab" role="tab" id="tab-astro" aria-selected="true" aria-controls="p-astro" type="button">Astrolog</button>
-          <button class="tab" role="tab" id="tab-kuafor" aria-selected="false" aria-controls="p-kuafor" tabindex="-1" type="button">Kuaför</button>
-          <button class="tab" role="tab" id="tab-kafe" aria-selected="false" aria-controls="p-kafe" tabindex="-1" type="button">Kafe</button>
+          <button class="tab" role="tab" id="tab-astro" aria-selected="true" aria-controls="p-astro" data-ad="Astroloji Atölyesi" type="button">Astrolog</button>
+          <button class="tab" role="tab" id="tab-kuafor" aria-selected="false" aria-controls="p-kuafor" data-ad="Kuaför Salonu" tabindex="-1" type="button">Kuaför</button>
+          <button class="tab" role="tab" id="tab-kafe" aria-selected="false" aria-controls="p-kafe" data-ad="Mahalle Kafesi" tabindex="-1" type="button">Kafe</button>
         </div>
         <div class="phone">
+          <span class="island" aria-hidden="true"></span>
           <div class="screen t-astro" role="tabpanel" id="p-astro" aria-labelledby="tab-astro">
-            <div class="s-top"><span>Örnek Astroloji</span><span aria-hidden="true">☰</span></div>
+            <div class="s-status" aria-hidden="true"><span>09:41</span><span class="sig"><i></i><i></i><i></i></span></div>
+            <div class="s-top"><span>✦ Örnek Astroloji</span><span class="s-menu" aria-hidden="true"><i></i><i></i></span></div>
+            <div class="s-art" aria-hidden="true"><span class="s-pill">Online ve yüz yüze</span></div>
             <p class="s-title">Haritanızdaki yolu birlikte okuyalım</p>
-            <p class="s-sub">Doğum haritası ve yıllık yorum seansları</p>
-            <ul class="s-list"><li>Doğum haritası yorumu</li><li>Yıllık yorum</li><li>Uyumluluk analizi</li></ul>
+            <ul class="s-list"><li>Doğum haritası yorumu<em>60 dk</em></li><li>Yıllık yorum<em>90 dk</em></li><li>Uyumluluk analizi<em>Çift</em></li></ul>
             <div class="s-cta">WhatsApp'tan randevu al</div>
-            <div class="s-foot"><span>Online seans</span><span>Instagram</span></div>
+            <div class="s-bar" aria-hidden="true"><span class="on">Ana sayfa</span><span>Hizmetler</span><span>İletişim</span></div>
           </div>
           <div class="screen t-kuafor" role="tabpanel" id="p-kuafor" aria-labelledby="tab-kuafor" hidden>
-            <div class="s-top"><span>Örnek Kuaför</span><span aria-hidden="true">☰</span></div>
+            <div class="s-status" aria-hidden="true"><span>09:41</span><span class="sig"><i></i><i></i><i></i></span></div>
+            <div class="s-top"><span>Örnek Kuaför</span><span class="s-menu" aria-hidden="true"><i></i><i></i></span></div>
+            <div class="s-art" aria-hidden="true"><span class="s-pill">Randevulu çalışır</span></div>
             <p class="s-title">Saçınıza yakışanı birlikte seçelim</p>
-            <p class="s-sub">Kesim, boya ve bakım</p>
-            <ul class="s-list"><li>Kesim ve fön</li><li>Boya ve ombre</li><li>Bakım ve keratin</li></ul>
+            <ul class="s-list"><li>Kesim ve fön<em>45 dk</em></li><li>Boya ve ombre<em>2 sa</em></li><li>Bakım ve keratin<em>1,5 sa</em></li></ul>
             <div class="s-cta">Randevu için yaz</div>
-            <div class="s-foot"><span>Haritada bul</span><span>Çalışma saatleri</span></div>
+            <div class="s-bar" aria-hidden="true"><span class="on">Ana sayfa</span><span>Hizmetler</span><span>Konum</span></div>
           </div>
           <div class="screen t-kafe" role="tabpanel" id="p-kafe" aria-labelledby="tab-kafe" hidden>
-            <div class="s-top"><span>Örnek Kafe</span><span aria-hidden="true">☰</span></div>
+            <div class="s-status" aria-hidden="true"><span>09:41</span><span class="sig"><i></i><i></i><i></i></span></div>
+            <div class="s-top"><span>Örnek Kafe</span><span class="s-menu" aria-hidden="true"><i></i><i></i></span></div>
+            <div class="s-art" aria-hidden="true"><span class="s-pill">Her gün 08.00'den</span></div>
             <p class="s-title">Kahve hazır, masa sizin için</p>
-            <p class="s-sub">Günlük menü ve demleme kahveler</p>
-            <ul class="s-list"><li>Kahve ve demleme</li><li>Tatlılar</li><li>Kahvaltı tabağı</li></ul>
+            <ul class="s-list"><li>Kahve ve demleme<em>Menü</em></li><li>Tatlılar<em>Günlük</em></li><li>Kahvaltı tabağı<em>Sabah</em></li></ul>
             <div class="s-cta">Rezervasyon için yaz</div>
-            <div class="s-foot"><span>Konum</span><span>Menü</span></div>
+            <div class="s-bar" aria-hidden="true"><span class="on">Ana sayfa</span><span>Menü</span><span>Konum</span></div>
           </div>
         </div>
         <p class="vitrin-note">Örnek taslaklardır. Sizin siteniz, işletmenize göre tasarlanır.</p>
@@ -751,6 +826,7 @@
       t.tabIndex=on?0:-1;
       document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
     });
+    var ad=document.getElementById('tabelaAd'); if(ad) ad.textContent=tab.getAttribute('data-ad')||'';
   }
   tabs.forEach(function(t,i){
     t.addEventListener('click',function(){select(t);});
