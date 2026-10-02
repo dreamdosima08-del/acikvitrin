@@ -3,704 +3,708 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Açık Vitrin — Astrologlar, Koçlar ve Küçük İşletmeler için Web Sitesi</title>
-<meta name="description" content="Astrologlardan kuaförlere, küçük işletmelerin Instagram'dan taşıp güven veren, Google'da bulunan bir web sitesine kavuşması birkaç gün sürer. Sabit kapsam, şeffaf fiyat, hızlı teslim.">
-<meta name="keywords" content="astrolog web sitesi, küçük işletme web sitesi, esnaf web sitesi, kuaför web sitesi, holistik koç web sitesi, dijital kartvizit, hazır web sitesi paketi, uygun fiyatlı web tasarım">
+<title>Küçük İşletmeler için Web Sitesi | Açık Vitrin</title>
+<meta name="description" content="Astrolog, koç, kuaför, kafe ve yerel esnaf için web sitesi kurulumu. Birkaç günde yayında, 4.500 TL'den sabit fiyat, taslağı önce siz görürsünüz.">
 <meta name="author" content="Açık Vitrin">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#12141c">
 <link rel="canonical" href="https://acikvitrin.com/">
+<link rel="alternate" hreflang="tr" href="https://acikvitrin.com/">
+<link rel="alternate" hreflang="x-default" href="https://acikvitrin.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Açık Vitrin">
-<meta property="og:title" content="Açık Vitrin — Astrologlar, Koçlar ve Küçük İşletmeler için Web Sitesi">
-<meta property="og:description" content="Instagram'ın var, peki gerçek bir web siteniz var mı? Astrologlar, koçlar ve küçük işletmeler için hızlı, uygun fiyatlı ve Google'da bulunan web siteleri.">
+<meta property="og:title" content="Küçük İşletmeler için Web Sitesi | Açık Vitrin">
+<meta property="og:description" content="Instagram'ın var, peki sizi arayan müşteri bir web sitesi buluyor mu? Birkaç günde yayında, 4.500 TL'den sabit fiyat.">
 <meta property="og:url" content="https://acikvitrin.com/">
 <meta property="og:locale" content="tr_TR">
-<meta property="og:image" content="https://acikvitrin.com/og-image.jpg">
+<meta property="og:image" content="https://acikvitrin.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Açık Vitrin: küçük işletmeler için web sitesi. Kepenk hep açık.">
 
-<!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Açık Vitrin — Astrologlar, Koçlar ve Küçük İşletmeler için Web Sitesi">
-<meta name="twitter:description" content="Instagram'ın var, peki gerçek bir web siteniz var mı? Hızlı, uygun fiyatlı ve Google'da bulunan web siteleri.">
-<meta name="twitter:image" content="https://acikvitrin.com/og-image.jpg">
+<meta name="twitter:title" content="Küçük İşletmeler için Web Sitesi | Açık Vitrin">
+<meta name="twitter:description" content="Instagram'ın var, peki sizi arayan müşteri bir web sitesi buluyor mu? Birkaç günde yayında, 4.500 TL'den sabit fiyat.">
+<meta name="twitter:image" content="https://acikvitrin.com/og-image.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg: #12141c;
-    --bg-elevated: #1b1e2a;
-    --bg-elevated-2: #222634;
-    --amber: #e7a33e;
-    --amber-soft: #f0c17a;
-    --teal: #5fc1b8;
-    --text: #f3efe7;
-    --text-muted: #9aa0b4;
-    --line: rgba(243,239,231,0.12);
-    --line-strong: rgba(243,239,231,0.22);
-    --radius: 14px;
-    --shadow-lamp: 0 0 40px rgba(231,163,62,0.18);
+    --bg:#12141c;
+    --bg-2:#1b1e2a;
+    --bg-3:#242838;
+    --amber:#e7a33e;
+    --amber-soft:#f0c17a;
+    --teal:#5fc1b8;
+    --text:#f3efe7;
+    --muted:#a3a9bc;
+    --line:rgba(243,239,231,.13);
+    --line-strong:rgba(243,239,231,.24);
+    --radius:14px;
   }
-
   *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;scroll-padding-top:84px;}
   body{
-    margin:0;
-    background:var(--bg);
-    color:var(--text);
-    font-family:'Manrope', sans-serif;
-    line-height:1.55;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
+    margin:0;background:var(--bg);color:var(--text);
+    font-family:'Manrope',system-ui,sans-serif;font-size:1rem;line-height:1.6;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
   }
-  h1,h2,h3{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    line-height:1.12;
-    margin:0;
-  }
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.14;margin:0;letter-spacing:-.01em;}
   p{margin:0;}
   a{color:inherit;text-decoration:none;}
   ul{margin:0;padding:0;list-style:none;}
-  img{max-width:100%;display:block;}
-
   ::selection{background:var(--amber);color:#12141c;}
+  a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{
+    outline:2px solid var(--amber);outline-offset:3px;border-radius:6px;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .skip{position:absolute;left:-999px;top:8px;background:var(--amber);color:#1a1206;padding:8px 14px;border-radius:8px;font-weight:700;z-index:300;}
+  .skip:focus{left:8px;}
 
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  /* kepenk açılışı: sayfadaki tek orkestre hareket */
+  .shutter{position:fixed;inset:0;z-index:200;pointer-events:none;}
+  .shutter i{
+    position:absolute;left:0;right:0;height:52%;
+    background:repeating-linear-gradient(180deg,#23262f 0,#23262f 10px,#1a1c24 10px,#1a1c24 12px);
+  }
+  .shutter i:first-child{top:0;animation:up .8s .1s cubic-bezier(.65,0,.35,1) forwards;border-bottom:3px solid rgba(231,163,62,.7);}
+  .shutter i:last-child{bottom:0;animation:down .8s .1s cubic-bezier(.65,0,.35,1) forwards;border-top:3px solid rgba(231,163,62,.7);}
+  @keyframes up{to{transform:translateY(-100%);}}
+  @keyframes down{to{transform:translateY(100%);}}
+  @media (prefers-reduced-motion:reduce){
+    .shutter{display:none;}
+    html{scroll-behavior:auto;}
+    *{transition-duration:.01ms !important;animation-duration:.01ms !important;}
   }
 
-  a:focus-visible, button:focus-visible{
-    outline:2px solid var(--amber);
-    outline-offset:3px;
-    border-radius:4px;
-  }
-
-  .wrap{
-    max-width:1120px;
-    margin:0 auto;
-    padding:0 24px;
-  }
-
-  /* ---------- Shutter intro ---------- */
-  .shutter{
-    position:fixed;
-    inset:0;
-    z-index:200;
-    pointer-events:none;
-  }
-  .shutter-panel{
-    position:absolute;
-    left:0; right:0;
-    height:52%;
-    background:
-      repeating-linear-gradient(
-        180deg,
-        #23262f 0px, #23262f 10px,
-        #1a1c24 10px, #1a1c24 12px
-      );
-    box-shadow: inset 0 0 60px rgba(0,0,0,0.5);
-  }
-  .shutter-top{ top:0; animation: shutterUp 1s 0.15s cubic-bezier(.65,0,.35,1) forwards; }
-  .shutter-bottom{ bottom:0; animation: shutterDown 1s 0.15s cubic-bezier(.65,0,.35,1) forwards; }
-  .shutter-top::after, .shutter-bottom::after{
-    content:"";
-    position:absolute;
-    left:0; right:0;
-    height:3px;
-    background:linear-gradient(90deg, transparent, var(--amber), transparent);
-    opacity:0.7;
-  }
-  .shutter-top::after{ bottom:0; }
-  .shutter-bottom::after{ top:0; }
-
-  @keyframes shutterUp{ to{ transform:translateY(-100%); } }
-  @keyframes shutterDown{ to{ transform:translateY(100%); } }
-
-  @media (prefers-reduced-motion: reduce){
-    .shutter{ display:none; }
-  }
-
-  /* ---------- Nav ---------- */
   header{
-    position:sticky;
-    top:0;
-    z-index:50;
-    backdrop-filter:blur(10px);
-    background:rgba(18,20,28,0.78);
+    position:sticky;top:0;z-index:50;
+    backdrop-filter:blur(10px);background:rgba(18,20,28,.82);
     border-bottom:1px solid var(--line);
   }
-  .nav{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:16px 24px;
-  }
-  .logo{
-    font-family:'Fraunces', serif;
-    font-weight:600;
-    font-size:1.15rem;
-    letter-spacing:0.01em;
-    display:flex;
-    align-items:center;
-    gap:8px;
-  }
-  .logo-mark{
-    width:9px;height:9px;border-radius:50%;
-    background:var(--amber);
-    box-shadow:0 0 10px 2px rgba(231,163,62,0.65);
-  }
-  .nav-links{
-    display:none;
-    gap:28px;
-    font-size:0.92rem;
-    color:var(--text-muted);
-  }
-  .nav-links a:hover{ color:var(--text); }
-  @media (min-width:760px){ .nav-links{ display:flex; } }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;}
+  .logo{font-family:'Fraunces',serif;font-weight:600;font-size:1.15rem;display:flex;align-items:center;gap:9px;}
+  .logo-mark{width:9px;height:9px;border-radius:50%;background:var(--amber);box-shadow:0 0 10px 2px rgba(231,163,62,.65);}
+  .nav-links{display:none;gap:26px;font-size:.92rem;color:var(--muted);}
+  .nav-links a:hover{color:var(--text);}
+  @media(min-width:820px){.nav-links{display:flex;}}
 
   .btn{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:11px 20px;
-    border-radius:999px;
-    font-weight:700;
-    font-size:0.92rem;
-    white-space:nowrap;
-    transition:transform 0.15s ease, box-shadow 0.15s ease;
+    display:inline-flex;align-items:center;justify-content:center;gap:8px;
+    padding:12px 22px;border-radius:999px;font:inherit;font-weight:700;font-size:.95rem;
+    border:0;cursor:pointer;white-space:nowrap;
+    transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;
   }
-  .btn-primary{
-    background:var(--amber);
-    color:#1a1206;
-    box-shadow:0 6px 20px rgba(231,163,62,0.25);
-  }
-  .btn-primary:hover{ transform:translateY(-1px); box-shadow:0 10px 26px rgba(231,163,62,0.35); }
-  .btn-ghost{
-    border:1px solid var(--line-strong);
-    color:var(--text);
-  }
-  .btn-ghost:hover{ border-color:var(--amber); color:var(--amber-soft); }
+  .btn-primary{background:var(--amber);color:#1a1206;box-shadow:0 6px 20px rgba(231,163,62,.25);}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(231,163,62,.38);}
+  .btn-ghost{border:1px solid var(--line-strong);color:var(--text);background:transparent;}
+  .btn-ghost:hover{border-color:var(--amber);color:var(--amber-soft);}
+  .btn-lg{padding:15px 28px;font-size:1rem;}
+  .btn svg{width:18px;height:18px;flex:none;}
 
-  /* ---------- Hero ---------- */
-  .hero{
-    padding:88px 0 72px;
-    position:relative;
-  }
-  .hero-grid{
-    display:grid;
-    gap:48px;
-    align-items:center;
-  }
-  @media (min-width:900px){
-    .hero-grid{ grid-template-columns:1.1fr 0.9fr; }
-  }
-  .eyebrow{
-    font-family:'JetBrains Mono', monospace;
-    font-size:0.76rem;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--amber-soft);
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-    margin-bottom:20px;
-  }
-  .eyebrow::before{
-    content:"";
-    width:22px; height:1px;
-    background:var(--amber);
-  }
-  .hero h1{
-    font-size:clamp(2.1rem, 4.6vw, 3.4rem);
-    letter-spacing:-0.01em;
-    max-width:14ch;
-  }
-  .hero h1 em{
-    font-style:normal;
-    color:var(--amber-soft);
-  }
-  .hero p.lead{
-    margin-top:22px;
-    font-size:1.08rem;
-    color:var(--text-muted);
-    max-width:46ch;
-  }
-  .hero-cta{
-    margin-top:32px;
-    display:flex;
-    flex-wrap:wrap;
-    gap:14px;
-  }
+  /* hero */
+  .hero{padding:72px 0 64px;}
+  .hero-grid{display:grid;gap:52px;align-items:center;}
+  @media(min-width:940px){.hero-grid{grid-template-columns:1.05fr .95fr;}}
+  .hero h1{font-size:clamp(2.1rem,4.7vw,3.35rem);max-width:17ch;}
+  .lead{margin-top:22px;font-size:1.1rem;color:var(--muted);max-width:52ch;}
+  .hero-cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;}
+  .assure{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px 24px;font-size:.92rem;color:var(--text);}
+  .assure li{display:flex;align-items:center;gap:8px;}
+  .assure li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 8px rgba(95,193,184,.8);}
 
-  /* window mock */
-  .window{
-    position:relative;
-    background:var(--bg-elevated);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:22px;
-    box-shadow:var(--shadow-lamp), 0 30px 60px rgba(0,0,0,0.35);
+  /* vitrin + telefon */
+  .vitrin{
+    position:relative;border:1px solid var(--line-strong);border-radius:20px;
+    padding:22px 22px 18px;
+    background:radial-gradient(120% 90% at 50% 0%,rgba(231,163,62,.2),transparent 62%),var(--bg-2);
+    box-shadow:0 30px 60px rgba(0,0,0,.35);
   }
-  .window-frame{
-    display:flex;
-    gap:6px;
-    margin-bottom:18px;
+  .vitrin::before{ /* tente */
+    content:"";position:absolute;left:18px;right:18px;top:-1px;height:10px;border-radius:0 0 10px 10px;
+    background:repeating-linear-gradient(90deg,var(--amber) 0 22px,#c98626 22px 44px);opacity:.9;
   }
-  .window-frame span{
-    width:9px;height:9px;border-radius:50%;
-    background:var(--line-strong);
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px;}
+  .tab{
+    font:inherit;font-size:.86rem;font-weight:600;color:var(--muted);background:transparent;
+    border:1px solid var(--line);border-radius:999px;padding:8px 15px;cursor:pointer;
+    transition:border-color .15s,color .15s,background .15s;
   }
-  .window-body{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
+  .tab:hover{color:var(--text);border-color:var(--line-strong);}
+  .tab[aria-selected="true"]{background:var(--amber);border-color:var(--amber);color:#1a1206;}
+  .phone{
+    width:min(100%,290px);margin:0 auto;border-radius:34px;padding:10px;
+    background:#0b0c11;border:1px solid var(--line-strong);
+    box-shadow:0 0 0 1px #000,0 18px 40px rgba(0,0,0,.45);
   }
-  .window-row{
-    height:12px;
-    border-radius:6px;
-    background:linear-gradient(90deg, var(--bg-elevated-2), rgba(255,255,255,0.03));
-  }
-  .window-row.w-70{ width:70%; }
-  .window-row.w-50{ width:50%; }
-  .window-row.w-90{ width:90%; }
-  .window-row.tall{ height:64px; border-radius:10px; margin-top:6px; background:linear-gradient(135deg, rgba(231,163,62,0.16), rgba(95,193,184,0.12)); border:1px dashed var(--line-strong); }
-  .window-caption{
-    margin-top:16px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:0.72rem;
-    color:var(--text-muted);
-    display:flex;
-    justify-content:space-between;
-  }
-  .lamp-dot{
-    display:inline-block;
-    width:6px;height:6px;
-    border-radius:50%;
-    background:var(--teal);
-    box-shadow:0 0 8px 1px rgba(95,193,184,0.7);
-    margin-right:6px;
-  }
+  .screen{border-radius:26px;padding:20px 18px 18px;min-height:380px;display:flex;flex-direction:column;gap:14px;
+    background:var(--s-bg);color:var(--s-ink);}
+  .screen[hidden]{display:none;}
+  .t-astro{--s-bg:#241f3d;--s-ink:#f1ecff;--s-accent:#e7a33e;--s-card:rgba(255,255,255,.07);--s-cta-ink:#1a1206;}
+  .t-kuafor{--s-bg:#f6ebee;--s-ink:#3a1f2a;--s-accent:#8d3b57;--s-card:rgba(141,59,87,.1);--s-cta-ink:#fff;}
+  .t-kafe{--s-bg:#1e3a33;--s-ink:#f4efe0;--s-accent:#e9c46a;--s-card:rgba(255,255,255,.08);--s-cta-ink:#1b2a22;}
+  .s-top{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;font-weight:700;color:var(--s-accent);}
+  .s-title{font-family:'Fraunces',serif;font-weight:600;font-size:1.45rem;line-height:1.15;margin-top:6px;}
+  .s-sub{font-size:.84rem;opacity:.8;}
+  .s-list{display:grid;gap:8px;margin-top:4px;}
+  .s-list li{background:var(--s-card);border-radius:10px;padding:10px 12px;font-size:.86rem;font-weight:600;}
+  .s-cta{margin-top:auto;text-align:center;background:var(--s-accent);color:var(--s-cta-ink);font-weight:800;font-size:.9rem;padding:12px;border-radius:999px;}
+  .s-foot{display:flex;justify-content:space-between;font-size:.74rem;opacity:.7;}
+  .vitrin-note{margin-top:16px;text-align:center;font-size:.84rem;color:var(--muted);}
 
-  /* ---------- Section shell ---------- */
-  section{ padding:76px 0; }
-  .section-head{
-    max-width:52ch;
-    margin-bottom:44px;
-  }
-  .section-head .eyebrow{ margin-bottom:14px; }
-  .section-head h2{
-    font-size:clamp(1.6rem, 3.2vw, 2.2rem);
-  }
-  .section-head p{
-    margin-top:14px;
-    color:var(--text-muted);
-    font-size:1rem;
-  }
+  /* bölümler */
+  section{padding:72px 0;}
+  .sec-head{max-width:56ch;margin-bottom:38px;}
+  .sec-head h2{font-size:clamp(1.65rem,3.3vw,2.25rem);}
+  .sec-head p{margin-top:14px;color:var(--muted);}
+  .divider{border:0;border-top:1px solid var(--line);max-width:1072px;margin:0 auto;}
 
-  .divider{
-    border:none;
-    border-top:1px solid var(--line);
-  }
+  /* bir bakışta */
+  .facts{display:grid;gap:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--bg-2);}
+  @media(min-width:760px){.facts{grid-template-columns:1fr 1fr;}}
+  .fact{padding:20px 24px;border-bottom:1px solid var(--line);}
+  @media(min-width:760px){.fact:nth-child(odd){border-right:1px solid var(--line);}.fact:nth-last-child(-n+2){border-bottom:0;}}
+  .fact:last-child{border-bottom:0;}
+  .fact dt{font-size:.84rem;color:var(--muted);}
+  .fact dd{margin:4px 0 0;font-weight:700;font-size:1.02rem;}
 
-  /* ---------- Why cards ---------- */
-  .why-grid{
-    display:grid;
-    gap:20px;
-  }
-  @media (min-width:760px){ .why-grid{ grid-template-columns:repeat(3,1fr); } }
-  .why-card{
-    background:var(--bg-elevated);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:26px;
-    transition:border-color 0.2s ease, transform 0.2s ease;
-  }
-  .why-card:hover{ border-color:rgba(231,163,62,0.4); transform:translateY(-2px); }
-  .why-card h3{
-    font-size:1.08rem;
-    font-weight:600;
-    margin-bottom:10px;
-  }
-  .why-card p{ color:var(--text-muted); font-size:0.94rem; }
+  /* karşılaştırma */
+  .compare{display:grid;gap:18px;}
+  @media(min-width:800px){.compare{grid-template-columns:1fr 1fr;}}
+  .col{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--bg-2);}
+  .col.win{border-color:rgba(231,163,62,.5);background:linear-gradient(160deg,rgba(231,163,62,.1),var(--bg-2) 60%);}
+  .col h3{font-size:1.2rem;margin-bottom:18px;}
+  .col li{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--line);font-size:.97rem;}
+  .col li:first-child{border-top:0;}
+  .col .mk{flex:none;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;margin-top:3px;}
+  .no .mk{background:rgba(255,255,255,.08);color:var(--muted);}
+  .yes .mk{background:rgba(95,193,184,.18);color:var(--teal);}
+  .no li{color:var(--muted);}
 
-  /* ---------- Scope list ---------- */
-  .scope{
-    display:grid;
-    gap:36px;
-  }
-  @media (min-width:900px){ .scope{ grid-template-columns:1fr 1fr; } }
-  .scope-list li{
-    display:flex;
-    gap:14px;
-    padding:14px 0;
-    border-bottom:1px solid var(--line);
-    font-size:0.98rem;
-  }
-  .scope-list li:last-child{ border-bottom:none; }
-  .scope-list .check{
-    flex:none;
-    width:20px;height:20px;
-    border-radius:50%;
-    background:rgba(95,193,184,0.15);
-    color:var(--teal);
-    display:flex;align-items:center;justify-content:center;
-    font-size:0.7rem;
-    margin-top:2px;
-  }
-  .scope-note{
-    background:var(--bg-elevated);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:26px;
-    align-self:start;
-  }
-  .scope-note h3{ font-size:1.05rem; margin-bottom:10px; }
-  .scope-note p{ color:var(--text-muted); font-size:0.94rem; }
+  /* kapsam */
+  .scope{display:grid;gap:36px;}
+  @media(min-width:900px){.scope{grid-template-columns:1.1fr .9fr;align-items:start;}}
+  .scope-list li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);}
+  .scope-list li:last-child{border-bottom:0;}
+  .scope-list .mk{flex:none;width:20px;height:20px;border-radius:50%;background:rgba(95,193,184,.18);color:var(--teal);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;margin-top:3px;}
+  .scope-list b{display:block;font-weight:700;}
+  .scope-list span.d{color:var(--muted);font-size:.92rem;}
+  .callout{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px;}
+  .callout h3{font-size:1.1rem;margin-bottom:10px;}
+  .callout p{color:var(--muted);font-size:.96rem;}
 
-  /* ---------- Process ---------- */
-  .process{
-    display:grid;
-    gap:0;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-  @media (min-width:760px){ .process{ grid-template-columns:repeat(3,1fr); } }
-  .process-step{
-    padding:30px 26px;
-    border-bottom:1px solid var(--line);
-    background:var(--bg-elevated);
-  }
-  @media (min-width:760px){
-    .process-step{ border-bottom:none; border-right:1px solid var(--line); }
-    .process-step:last-child{ border-right:none; }
-  }
-  .process-num{
-    font-family:'JetBrains Mono', monospace;
-    color:var(--amber);
-    font-size:0.8rem;
-    letter-spacing:0.08em;
-  }
-  .process-step h3{
-    margin-top:12px;
-    font-size:1.1rem;
-  }
-  .process-step p{
-    margin-top:10px;
-    color:var(--text-muted);
-    font-size:0.94rem;
-  }
+  /* süreç: gerçekten sıralı */
+  .steps{counter-reset:s;display:grid;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;}
+  @media(min-width:800px){.steps{grid-template-columns:repeat(3,1fr);}}
+  .step{padding:28px 26px;background:var(--bg-2);border-bottom:1px solid var(--line);counter-increment:s;}
+  .step:last-child{border-bottom:0;}
+  @media(min-width:800px){.step{border-bottom:0;border-right:1px solid var(--line);}.step:last-child{border-right:0;}}
+  .step::before{content:counter(s);display:flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;border:1px solid var(--amber);color:var(--amber-soft);font-weight:800;font-size:.9rem;margin-bottom:14px;}
+  .step h3{font-size:1.15rem;}
+  .step p{margin-top:8px;color:var(--muted);font-size:.95rem;}
 
-  /* ---------- Audience ---------- */
-  .audience-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:14px;
-  }
-  @media (min-width:640px){ .audience-grid{ grid-template-columns:repeat(3,1fr); } }
-  .audience-tag{
-    border:1px solid var(--line);
-    border-radius:999px;
-    padding:12px 18px;
-    text-align:center;
-    font-size:0.9rem;
-    color:var(--text-muted);
-    transition:border-color 0.2s ease, color 0.2s ease;
-  }
-  .audience-tag:hover{ border-color:var(--amber); color:var(--text); }
+  /* kimler için */
+  .tags{display:flex;flex-wrap:wrap;gap:12px;}
+  .tag{border:1px solid var(--line);border-radius:999px;padding:11px 20px;font-size:.93rem;color:var(--muted);}
 
-  /* ---------- Pricing ---------- */
-  .price-grid{
-    display:grid;
-    gap:20px;
-  }
-  @media (min-width:760px){ .price-grid{ grid-template-columns:1fr 1fr; } }
-  .price-card{
-    background:linear-gradient(160deg, var(--bg-elevated), var(--bg-elevated-2));
-    border:1px solid var(--line-strong);
-    border-radius:var(--radius);
-    padding:36px;
-    display:grid;
-    gap:24px;
-  }
-  @media (min-width:760px){ .price-card{ grid-template-columns:1.2fr 0.8fr; align-items:center; } }
-  .price-card h3{ font-size:1.3rem; }
-  .price-card p{ color:var(--text-muted); margin-top:10px; font-size:0.96rem; }
-  .price-tag{
-    font-family:'JetBrains Mono', monospace;
-    color:var(--amber-soft);
-    font-size:0.85rem;
-  }
-  .price-cta{ justify-self:start; }
-  @media (min-width:760px){ .price-cta{ justify-self:end; } }
+  /* fiyat */
+  .plans{display:grid;gap:20px;}
+  @media(min-width:800px){.plans{grid-template-columns:1fr 1fr;}}
+  .plan{border:1px solid var(--line-strong);border-radius:var(--radius);padding:32px;background:var(--bg-2);display:flex;flex-direction:column;gap:18px;}
+  .plan h3{font-size:1.35rem;}
+  .plan .for{color:var(--muted);font-size:.96rem;}
+  .price{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;}
+  .price b{font-family:'Fraunces',serif;font-size:2.3rem;font-weight:600;color:var(--amber-soft);}
+  .price span{color:var(--muted);font-size:.92rem;}
+  .plan .yearly{padding:14px 16px;border-radius:10px;background:var(--bg-3);font-size:.92rem;}
+  .plan .yearly em{font-style:normal;color:var(--muted);}
+  .plan ul li{padding:5px 0 5px 24px;position:relative;font-size:.95rem;}
+  .plan ul li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800;}
+  .plan .btn{margin-top:auto;align-self:flex-start;}
 
-  /* ---------- Footer / contact ---------- */
-  footer{
-    padding:70px 0 46px;
-    border-top:1px solid var(--line);
-  }
-  .footer-grid{
-    display:flex;
-    flex-direction:column;
-    gap:34px;
-  }
-  @media (min-width:760px){
-    .footer-grid{ flex-direction:row; justify-content:space-between; align-items:flex-end; }
-  }
-  .footer-cta h2{ font-size:clamp(1.5rem,3.4vw,2rem); max-width:16ch; }
-  .footer-links{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    font-size:0.92rem;
-    color:var(--text-muted);
-  }
-  .footer-links a{
-    display:inline-flex;
-    align-items:center;
-    gap:10px;
-  }
-  .footer-links a:hover{ color:var(--amber-soft); }
-  .footer-links .icon{
-    width:19px;
-    height:19px;
-    flex:none;
-    color:var(--teal);
-    transition:color 0.2s ease;
-  }
-  .footer-links a:hover .icon{ color:var(--amber); }
-  .footer-bottom{
-    margin-top:50px;
-    padding-top:22px;
-    border-top:1px solid var(--line);
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    justify-content:space-between;
-    font-size:0.78rem;
-    color:var(--text-muted);
-  }
+  /* mesaj hazırlayıcı */
+  .builder{border:1px solid rgba(231,163,62,.45);border-radius:20px;padding:34px;background:linear-gradient(160deg,rgba(231,163,62,.09),var(--bg-2) 55%);display:grid;gap:30px;}
+  @media(min-width:900px){.builder{grid-template-columns:.9fr 1.1fr;padding:44px;}}
+  .builder h2{font-size:clamp(1.55rem,3vw,2.05rem);}
+  .builder .intro p{margin-top:14px;color:var(--muted);}
+  .field{margin-bottom:20px;}
+  .field label,.field .lab{display:block;font-weight:700;font-size:.92rem;margin-bottom:10px;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{font:inherit;font-size:.88rem;font-weight:600;color:var(--muted);background:transparent;border:1px solid var(--line-strong);border-radius:999px;padding:9px 16px;cursor:pointer;transition:.15s;}
+  .chip:hover{color:var(--text);border-color:var(--amber);}
+  .chip[aria-pressed="true"]{background:var(--amber);border-color:var(--amber);color:#1a1206;}
+  .input{width:100%;font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--line-strong);border-radius:10px;padding:12px 14px;}
+  .input::placeholder{color:#6f758a;}
+  .preview{font-size:.88rem;color:var(--muted);background:var(--bg);border:1px dashed var(--line-strong);border-radius:10px;padding:12px 14px;margin-bottom:16px;}
+  .preview b{color:var(--text);}
 
-  /* scroll reveal */
-  .reveal{
-    opacity:0;
-    transform:translateY(16px);
-    transition:opacity 0.6s ease, transform 0.6s ease;
-  }
-  .reveal.is-visible{
-    opacity:1;
-    transform:translateY(0);
+  /* SSS */
+  .faq{max-width:780px;}
+  .faq details{border-top:1px solid var(--line);}
+  .faq details:last-child{border-bottom:1px solid var(--line);}
+  .faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:700;font-size:1.04rem;position:relative;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary::after{content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);font-size:1.5rem;font-weight:500;color:var(--amber);transition:transform .2s;}
+  .faq details[open] summary::after{transform:translateY(-50%) rotate(45deg);}
+  .faq .a{padding:0 40px 22px 0;color:var(--muted);}
+
+  /* footer */
+  footer{padding:70px 0 46px;border-top:1px solid var(--line);}
+  .foot-grid{display:flex;flex-direction:column;gap:32px;}
+  @media(min-width:760px){.foot-grid{flex-direction:row;justify-content:space-between;align-items:flex-end;}}
+  .foot-grid h2{font-size:clamp(1.5rem,3.4vw,2rem);max-width:16ch;}
+  .foot-links{display:flex;flex-direction:column;gap:12px;font-size:.95rem;color:var(--muted);}
+  .foot-links a{display:inline-flex;align-items:center;gap:10px;}
+  .foot-links a:hover{color:var(--amber-soft);}
+  .foot-links svg{width:19px;height:19px;flex:none;color:var(--teal);}
+  .foot-bottom{margin-top:48px;padding-top:22px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.8rem;color:var(--muted);}
+
+  /* mobil sabit buton */
+  .sticky-cta{display:none;}
+  @media(max-width:819px){
+    .sticky-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;}
+    .sticky-cta .btn{width:100%;box-shadow:0 10px 30px rgba(0,0,0,.5);}
+    body{padding-bottom:78px;}
+    .nav .btn{display:none;}
   }
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Açık Vitrin",
-  "description": "Astrologlar, holistik koçlar ve küçük işletmeler için hazır kapsamlı, uygun fiyatlı web sitesi tasarım ve kurulum hizmeti.",
-  "url": "https://acikvitrin.com/",
-  "email": "dreamdosima08@gmail.com",
-  "areaServed": "TR",
-  "priceRange": "$$",
-  "knowsAbout": ["web tasarım", "dijital kartvizit", "kurumsal web sitesi", "SEO"],
-  "makesOffer": [
+  "@type": "FAQPage",
+  "@id": "https://acikvitrin.com/#faq",
+  "inLanguage": "tr-TR",
+  "mainEntity": [
     {
-      "@type": "Offer",
-      "name": "Başlangıç Vitrini",
-      "description": "Ana sayfa, hizmetler, WhatsApp/Instagram yönlendirme, harita, galeri, temel SEO ve mobil uyumlu tasarım içeren tek sayfalık dijital kartvizit sitesi.",
-      "price": "4500",
-      "priceCurrency": "TRY"
+      "@type": "Question",
+      "name": "Instagram'ım var, web sitesine gerçekten ihtiyacım var mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Instagram akışı hızlı unutur. Web sitesi hizmetlerinizi, konumunuzu ve iletişim bilginizi tek yerde, kalıcı olarak tutar. Sizi Google'da arayan biri de web sitenizi bulabilir."
+      }
     },
     {
-      "@type": "Offer",
-      "name": "Genişletilmiş Vitrin",
-      "description": "Çoklu sayfa: ayrı hizmetler sayfası, blog/yazı alanı ve daha geniş galeri içeren web sitesi.",
-      "price": "7500",
-      "priceCurrency": "TRY"
+      "@type": "Question",
+      "name": "Teknik bilgim yok, yapabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Teknik bir şey yapmanız gerekmez. İşletmenizi, hizmetlerinizi ve varsa görsellerinizi kısa bir mesajla paylaşmanız yeterli. Taslağı biz hazırlarız, siz görüp onaylarsınız."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Site ne kadar sürede yayına girer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Birkaç gün içinde. Taslağı birlikte netleştirdikten ve onayınızı aldıktan sonra siteniz kendi alan adınızda canlıya alınır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Fiyata neler dahil?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Başlangıç Vitrini 4.500 TL kurulum ücretidir ve ana sayfa, hizmetler, WhatsApp ve Instagram yönlendirme, harita, fotoğraf galerisi, temel SEO ve mobil uyumlu tasarımı kapsar. Yıllık 600 TL ile domain yenileme ve site bakımı yapılır. Başka gizli ücret yoktur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Başlangıç ve Genişletilmiş Vitrin arasındaki fark nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Başlangıç Vitrini tek sayfalık bir dijital kartvizit sitesidir. Genişletilmiş Vitrin 7.500 TL kurulum ve yılda 750 TL yenileme ile çok sayfalıdır: ayrı hizmetler sayfası, blog veya yazı alanı ve daha geniş galeri içerir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sitem Google'da çıkar mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her site, Google'da bulunmaya hazır temel SEO ayarlarıyla yayınlanır. Arama sıralaması rekabete ve zamana bağlıdır; bu yüzden belirli bir sıra vaadi vermeyiz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hangi işletmeler için uygun?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Astrologlar, holistik koçlar, kuaför ve güzellik salonları, kafe ve restoranlar, danışmanlık ve eğitim verenler, el emeği ve butik üretim yapanlar ile yerel esnaf için uygundur."
+      }
     }
-  ],
-  "audience": {
-    "@type": "Audience",
-    "audienceType": "Astrologlar, holistik koçlar, kuaförler, kafeler, danışmanlar, yerel esnaf"
-  }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebSite",
+      "@id":"https://acikvitrin.com/#website",
+      "url":"https://acikvitrin.com/",
+      "name":"Açık Vitrin",
+      "inLanguage":"tr-TR",
+      "publisher":{"@id":"https://acikvitrin.com/#org"}
+    },
+    {
+      "@type":"ProfessionalService",
+      "@id":"https://acikvitrin.com/#org",
+      "name":"Açık Vitrin",
+      "alternateName":"Açık Vitrin Web Sitesi Hizmeti",
+      "url":"https://acikvitrin.com/",
+      "description":"Astrologlar, holistik koçlar, kuaförler, kafeler ve yerel esnaf için sabit kapsamlı, sabit fiyatlı web sitesi tasarım, kurulum ve bakım hizmeti.",
+      "email":"dreamdosima08@gmail.com",
+      "telephone":"+905434290908",
+      "areaServed":{"@type":"Country","name":"Türkiye"},
+      "availableLanguage":"tr",
+      "priceRange":"4.500 TL - 7.500 TL",
+      "sameAs":["https://instagram.com/acik_vitrin"],
+      "knowsAbout":["küçük işletme web sitesi","dijital kartvizit","astrolog web sitesi","kuaför web sitesi","kafe web sitesi","yerel SEO"],
+      "audience":{"@type":"Audience","audienceType":"Astrologlar, holistik koçlar, kuaförler, kafeler, danışmanlar, yerel esnaf"},
+      "contactPoint":{"@type":"ContactPoint","contactType":"customer service","telephone":"+905434290908","email":"dreamdosima08@gmail.com","availableLanguage":"tr"},
+      "hasOfferCatalog":{
+        "@type":"OfferCatalog",
+        "name":"Açık Vitrin web sitesi paketleri",
+        "itemListElement":[
+          {
+            "@type":"Offer",
+            "name":"Başlangıç Vitrini",
+            "description":"Tek sayfalık tanıtım sitesi: ana sayfa, hizmetler, WhatsApp ve Instagram yönlendirme, harita, fotoğraf galerisi, temel SEO ve mobil uyumlu tasarım. Yıllık 600 TL domain yenileme ve bakım.",
+            "price":"4500","priceCurrency":"TRY",
+            "itemOffered":{"@type":"Service","name":"Tek sayfalık küçük işletme web sitesi","serviceType":"Web sitesi tasarımı ve kurulumu"}
+          },
+          {
+            "@type":"Offer",
+            "name":"Genişletilmiş Vitrin",
+            "description":"Çok sayfalı web sitesi: ayrı hizmetler sayfası, blog/yazı alanı ve daha geniş galeri. Yıllık 750 TL domain yenileme ve bakım.",
+            "price":"7500","priceCurrency":"TRY",
+            "itemOffered":{"@type":"Service","name":"Çok sayfalı küçük işletme web sitesi","serviceType":"Web sitesi tasarımı ve kurulumu"}
+          }
+        ]
+      }
+    },
+    {
+      "@type":"WebPage",
+      "@id":"https://acikvitrin.com/#webpage",
+      "url":"https://acikvitrin.com/",
+      "name":"Küçük İşletmeler için Web Sitesi | Açık Vitrin",
+      "isPartOf":{"@id":"https://acikvitrin.com/#website"},
+      "about":{"@id":"https://acikvitrin.com/#org"},
+      "inLanguage":"tr-TR",
+      "dateModified":"2026-10-02"
+    }
+  ]
 }
 </script>
 </head>
 <body>
+<a class="skip" href="#icerik">İçeriğe geç</a>
 
-<div class="shutter" aria-hidden="true">
-  <div class="shutter-panel shutter-top"></div>
-  <div class="shutter-panel shutter-bottom"></div>
-</div>
+<div class="shutter" aria-hidden="true"><i></i><i></i></div>
 
 <header>
-  <nav class="nav wrap">
+  <nav class="nav wrap" aria-label="Ana menü">
     <a href="#top" class="logo"><span class="logo-mark"></span>Açık Vitrin</a>
     <div class="nav-links">
-      <a href="#kapsam">Kapsam</a>
+      <a href="#ornek">Örnek taslaklar</a>
+      <a href="#kapsam">Neler dahil</a>
       <a href="#surec">Süreç</a>
-      <a href="#kimler-icin">Kimler için</a>
       <a href="#fiyat">Fiyat</a>
+      <a href="#sss">Sık sorulanlar</a>
     </div>
-    <a class="btn btn-primary" href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
+    <a class="btn btn-primary" data-wa href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan yaz</a>
   </nav>
 </header>
 
-<main id="top">
-  <section class="hero">
+<main id="icerik">
+  <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <span class="eyebrow">Web Sitesi Tasarım &amp; Kurulum Hizmeti</span>
-        <h1>Instagram'ın var. Peki gerçek bir <em>web siteniz</em> var mı?</h1>
-        <p class="lead">Astrologlar, holistik koçlar ve küçük işletmeler için web sitesi tasarlıyor, kuruyor ve yayına alıyoruz. Instagram'dan taşıp güven veren, Google'da bulunan bir web sitesine kavuşmanız birkaç gün sürer. Sabit kapsam, net fiyat, uzun ajans süreçleri yok.</p>
+        <h1>Instagram'ın var. Sizi arayan müşteri bir web sitesi buluyor mu?</h1>
+        <p class="lead">Açık Vitrin; astrolog, koç, kuaför, kafe ve yerel esnaf için web sitesi tasarlar, kurar ve yayına alır. Birkaç günde, sabit fiyatla, kendi alan adınızda.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan Yaz</a>
-          <a class="btn btn-ghost" href="#kapsam">Kapsamı Gör</a>
+          <a class="btn btn-primary btn-lg" data-wa href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan yaz</a>
+          <a class="btn btn-ghost btn-lg" href="#fiyat">Fiyatı gör</a>
         </div>
+        <ul class="assure">
+          <li>Taslağı önce siz görürsünüz</li>
+          <li>Onayınız olmadan yayına almayız</li>
+          <li>4.500 TL'den sabit fiyat</li>
+        </ul>
       </div>
-      <div class="window reveal">
-        <div class="window-frame"><span></span><span></span><span></span></div>
-        <div class="window-body">
-          <div class="window-row w-50"></div>
-          <div class="window-row w-90"></div>
-          <div class="window-row w-70"></div>
-          <div class="window-row tall"></div>
+
+      <div class="vitrin" id="ornek">
+        <div class="tabs" role="tablist" aria-label="Örnek taslak seçin">
+          <button class="tab" role="tab" id="tab-astro" aria-selected="true" aria-controls="p-astro" type="button">Astrolog</button>
+          <button class="tab" role="tab" id="tab-kuafor" aria-selected="false" aria-controls="p-kuafor" tabindex="-1" type="button">Kuaför</button>
+          <button class="tab" role="tab" id="tab-kafe" aria-selected="false" aria-controls="p-kafe" tabindex="-1" type="button">Kafe</button>
         </div>
-        <div class="window-caption">
-          <span><span class="lamp-dot"></span>web sitesi önizlemesi</span>
-          <span>mobil uyumlu</span>
+        <div class="phone">
+          <div class="screen t-astro" role="tabpanel" id="p-astro" aria-labelledby="tab-astro">
+            <div class="s-top"><span>Örnek Astroloji</span><span aria-hidden="true">☰</span></div>
+            <p class="s-title">Haritanızdaki yolu birlikte okuyalım</p>
+            <p class="s-sub">Doğum haritası ve yıllık yorum seansları</p>
+            <ul class="s-list"><li>Doğum haritası yorumu</li><li>Yıllık yorum</li><li>Uyumluluk analizi</li></ul>
+            <div class="s-cta">WhatsApp'tan randevu al</div>
+            <div class="s-foot"><span>Online seans</span><span>Instagram</span></div>
+          </div>
+          <div class="screen t-kuafor" role="tabpanel" id="p-kuafor" aria-labelledby="tab-kuafor" hidden>
+            <div class="s-top"><span>Örnek Kuaför</span><span aria-hidden="true">☰</span></div>
+            <p class="s-title">Saçınıza yakışanı birlikte seçelim</p>
+            <p class="s-sub">Kesim, boya ve bakım</p>
+            <ul class="s-list"><li>Kesim ve fön</li><li>Boya ve ombre</li><li>Bakım ve keratin</li></ul>
+            <div class="s-cta">Randevu için yaz</div>
+            <div class="s-foot"><span>Haritada bul</span><span>Çalışma saatleri</span></div>
+          </div>
+          <div class="screen t-kafe" role="tabpanel" id="p-kafe" aria-labelledby="tab-kafe" hidden>
+            <div class="s-top"><span>Örnek Kafe</span><span aria-hidden="true">☰</span></div>
+            <p class="s-title">Kahve hazır, masa sizin için</p>
+            <p class="s-sub">Günlük menü ve demleme kahveler</p>
+            <ul class="s-list"><li>Kahve ve demleme</li><li>Tatlılar</li><li>Kahvaltı tabağı</li></ul>
+            <div class="s-cta">Rezervasyon için yaz</div>
+            <div class="s-foot"><span>Konum</span><span>Menü</span></div>
+          </div>
         </div>
+        <p class="vitrin-note">Örnek taslaklardır. Sizin siteniz, işletmenize göre tasarlanır.</p>
       </div>
     </div>
   </section>
+
+  <hr class="divider">
+
+  <section id="bakista">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Açık Vitrin ne yapar?</h2>
+        <p>Instagram'ı olan ama internette kendi köşesi olmayan küçük işletmelere, işini doğru anlatan bir web sitesi kurar. Karmaşık bir uygulama değil; hizmetlerinizi, konumunuzu ve iletişim bilginizi tek yerde toplayan, Google'da bulunmaya hazır bir tanıtım sitesi.</p>
+      </div>
+      <dl class="facts">
+        <div class="fact"><dt>Ne teslim edilir</dt><dd>Mobil uyumlu, hızlı yüklenen web sitesi</dd></div>
+        <div class="fact"><dt>Kimler için</dt><dd>Astrolog, koç, kuaför, kafe, danışman, yerel esnaf</dd></div>
+        <div class="fact"><dt>Süre</dt><dd>Birkaç gün</dd></div>
+        <div class="fact"><dt>Fiyat</dt><dd>4.500 TL'den, kurulum tek seferlik</dd></div>
+        <div class="fact"><dt>Yıllık maliyet</dt><dd>600 TL'den (domain yenileme ve bakım)</dd></div>
+        <div class="fact"><dt>Başlamak için</dt><dd>WhatsApp'tan kısa bir mesaj</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <hr class="divider">
 
   <section id="neden">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Neden</span>
-        <h2>Instagram tek başına yeterli değil</h2>
-        <p>Takipçi sayınız ne olursa olsun, sizi ilk kez duyan biri genellikle önce Google'a bakar. Orada karşısına çıkan şey, kararını etkiler.</p>
+      <div class="sec-head">
+        <h2>Müşteriniz sizi aradığında ne görüyor?</h2>
+        <p>Sizi ilk kez duyan biri genellikle önce Google'a bakar. Karşısına çıkan şey, kararını etkiler.</p>
       </div>
-      <div class="why-grid">
-        <div class="why-card reveal">
-          <h3>Postlar kaybolur, site kalır</h3>
-          <p>Instagram akışı hızlı unutur. Web sitesi hizmetlerinizi, fiyatlarınızı ve iletişim bilginizi her zaman aynı yerde tutar.</p>
+      <div class="compare">
+        <div class="col no">
+          <h3>Sadece Instagram</h3>
+          <ul>
+            <li><span class="mk" aria-hidden="true">✕</span>Hizmetleriniz ve iletişim bilginiz postların arasında kaybolur</li>
+            <li><span class="mk" aria-hidden="true">✕</span>Google'da bulunmak zordur; sizi arayan biri hesabınıza ulaşamayabilir</li>
+            <li><span class="mk" aria-hidden="true">✕</span>Konum, çalışma saatleri ve hizmet listesi dağınık durur</li>
+            <li><span class="mk" aria-hidden="true">✕</span>Sizi tanımayan biri için güven veren az sinyal vardır</li>
+          </ul>
         </div>
-        <div class="why-card reveal">
-          <h3>Güven meselesi</h3>
-          <p>Gerçek bir web sitesi olan bir işletme, sadece Instagram hesabı olana göre daha ciddi ve kalıcı görünür.</p>
-        </div>
-        <div class="why-card reveal">
-          <h3>Google'da bulunmak</h3>
-          <p>"Artvin'de astrolog" ya da "Trabzon'da kuaför" diye arayan biri, Instagram hesabınızı değil, web sitenizi bulur.</p>
+        <div class="col yes win">
+          <h3>Instagram ve web siteniz</h3>
+          <ul>
+            <li><span class="mk" aria-hidden="true">✓</span>Hizmetler, hikayeniz ve iletişim bilginiz her zaman aynı yerde</li>
+            <li><span class="mk" aria-hidden="true">✓</span>"Artvin'de astrolog" ya da "Trabzon'da kuaför" arayan biri web sitenizi bulabilir</li>
+            <li><span class="mk" aria-hidden="true">✓</span>Harita, galeri ve WhatsApp'a tek tıkla ulaşım</li>
+            <li><span class="mk" aria-hidden="true">✓</span>Kendi alan adınızla daha ciddi ve kalıcı bir görünüm</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <hr class="divider wrap">
+  <hr class="divider">
 
   <section id="kapsam">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Kapsam</span>
-        <h2>Dijital vitrininizde neler var</h2>
-        <p>Karmaşık bir web uygulaması değil; işinizi doğru anlatan, sabit kapsamlı bir tanıtım sitesi.</p>
+      <div class="sec-head">
+        <h2>Vitrininizde neler var?</h2>
+        <p>Sabit kapsamlı bir tanıtım sitesi. Ne alacağınızı baştan bilirsiniz.</p>
       </div>
       <div class="scope">
-        <ul class="scope-list reveal">
-          <li><span class="check">✓</span>Ana sayfa: işletmeniz, hizmetleriniz, hikayeniz</li>
-          <li><span class="check">✓</span>WhatsApp ve Instagram'a tek tıkla yönlendirme</li>
-          <li><span class="check">✓</span>Harita ve konum entegrasyonu</li>
-          <li><span class="check">✓</span>Fotoğraf galerisi</li>
-          <li><span class="check">✓</span>Google'da bulunmaya hazır temel SEO ayarları</li>
-          <li><span class="check">✓</span>Mobil uyumlu, hızlı yüklenen tasarım</li>
+        <ul class="scope-list">
+          <li><span class="mk" aria-hidden="true">✓</span><div><b>Ana sayfa</b><span class="d">İşletmeniz, hizmetleriniz ve hikayeniz</span></div></li>
+          <li><span class="mk" aria-hidden="true">✓</span><div><b>WhatsApp ve Instagram yönlendirme</b><span class="d">Müşteri tek tıkla size yazar</span></div></li>
+          <li><span class="mk" aria-hidden="true">✓</span><div><b>Harita ve konum</b><span class="d">Sizi bulmak kolaylaşır</span></div></li>
+          <li><span class="mk" aria-hidden="true">✓</span><div><b>Fotoğraf galerisi</b><span class="d">İşinizi görselle gösterin</span></div></li>
+          <li><span class="mk" aria-hidden="true">✓</span><div><b>Temel SEO ayarları</b><span class="d">Google'da bulunmaya hazır yayınlanır</span></div></li>
+          <li><span class="mk" aria-hidden="true">✓</span><div><b>Mobil uyumlu, hızlı tasarım</b><span class="d">Telefondan bakan müşteri için</span></div></li>
         </ul>
-        <div class="scope-note reveal">
-          <h3>Domain yenileme ve site bakımı dahil</h3>
-          <p>Kurulumdan sonra siteniz kendi alan adınızda yayında kalır; yıllık domain yenileme ücreti ve sitenizin teknik takibi/bakımı da kapsama dahildir. Ek, gizli bir maliyet yok.</p>
+        <div class="callout">
+          <h3>Domain yenileme ve bakım ayrı sürpriz çıkarmaz</h3>
+          <p>Siteniz kendi alan adınızda yayında kalır. Yıllık domain yenileme ve sitenizin teknik takibi, paket fiyatındaki yıllık ücrete dahildir. Başka ek ücret yoktur.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <hr class="divider wrap">
+  <hr class="divider">
 
   <section id="surec">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Süreç</span>
+      <div class="sec-head">
         <h2>Üç adımda yayında</h2>
+        <p>Teknik bir şey yapmanız gerekmez. Birkaç gün içinde siteniz hazır olur.</p>
       </div>
-      <div class="process reveal">
-        <div class="process-step">
-          <span class="process-num">01</span>
+      <ol class="steps" style="margin:0;padding:0;list-style:none;">
+        <li class="step">
           <h3>Anlatın</h3>
-          <p>İşletmenizi, hizmetlerinizi ve varsa görsellerinizi paylaşın. Kısa bir mesaj yeterli.</p>
-        </div>
-        <div class="process-step">
-          <span class="process-num">02</span>
-          <h3>Tasarlayalım</h3>
-          <p>Size özel taslağı hazırlayıp gösteririz; birlikte netleştiririz.</p>
-        </div>
-        <div class="process-step">
-          <span class="process-num">03</span>
-          <h3>Yayında</h3>
-          <p>Onay sonrası siteniz kendi alan adınızda canlıya alınır.</p>
-        </div>
-      </div>
+          <p>İşletmenizi, hizmetlerinizi ve varsa görsellerinizi paylaşın. Kısa bir WhatsApp mesajı yeterli.</p>
+        </li>
+        <li class="step">
+          <h3>Taslağı görün</h3>
+          <p>Size özel taslağı hazırlayıp gösteririz. Birlikte netleştiririz.</p>
+        </li>
+        <li class="step">
+          <h3>Yayına alalım</h3>
+          <p>Onayınızdan sonra siteniz kendi alan adınızda canlıya alınır.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
-  <hr class="divider wrap">
+  <hr class="divider">
 
   <section id="kimler-icin">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Kimler için</span>
-        <h2>Bu vitrin kimin için açık</h2>
+      <div class="sec-head">
+        <h2>Bu vitrin kimler için açık?</h2>
         <p>Instagram'ı olan ama internette kendi köşesi olmayan herkes için.</p>
       </div>
-      <div class="audience-grid reveal">
-        <div class="audience-tag">Astrologlar &amp; holistik koçlar</div>
-        <div class="audience-tag">Kuaför &amp; güzellik salonları</div>
-        <div class="audience-tag">Kafe &amp; restoranlar</div>
-        <div class="audience-tag">Danışmanlık &amp; eğitim</div>
-        <div class="audience-tag">El emeği / butik üretim</div>
-        <div class="audience-tag">Yerel esnaf</div>
+      <ul class="tags">
+        <li class="tag">Astrologlar ve holistik koçlar</li>
+        <li class="tag">Kuaför ve güzellik salonları</li>
+        <li class="tag">Kafe ve restoranlar</li>
+        <li class="tag">Danışmanlık ve eğitim</li>
+        <li class="tag">El emeği ve butik üretim</li>
+        <li class="tag">Yerel esnaf</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="fiyat">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Fiyat baştan net</h2>
+        <p>Kurulum tek seferlik ödenir. Domain yenileme ve bakım yıllıktır. Gizli maliyet yok.</p>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <div>
+            <h3>Başlangıç Vitrini</h3>
+            <p class="for">Tek sayfalık dijital kartvizit sitesi. Çoğu küçük işletme için yeterli.</p>
+          </div>
+          <div class="price"><b>4.500 TL</b><span>kurulum, tek seferlik</span></div>
+          <p class="yearly">Yılda <strong>600 TL</strong> <em>domain yenileme ve bakım (ayda yaklaşık 50 TL)</em></p>
+          <ul>
+            <li>Ana sayfa, hizmetler, iletişim</li>
+            <li>Fotoğraf galerisi</li>
+            <li>WhatsApp, Instagram ve harita</li>
+            <li>Temel SEO ve mobil uyum</li>
+          </ul>
+          <a class="btn btn-primary" data-wa data-plan="Başlangıç Vitrini" href="https://wa.me/905434290908" target="_blank" rel="noopener">Bu paket için yaz</a>
+        </article>
+        <article class="plan">
+          <div>
+            <h3>Genişletilmiş Vitrin</h3>
+            <p class="for">Daha çok anlatacağınız şey varsa: çok sayfalı site.</p>
+          </div>
+          <div class="price"><b>7.500 TL</b><span>kurulum, tek seferlik</span></div>
+          <p class="yearly">Yılda <strong>750 TL</strong> <em>domain yenileme ve bakım (ayda yaklaşık 62 TL)</em></p>
+          <ul>
+            <li>Başlangıç paketindeki her şey</li>
+            <li>Ayrı hizmetler sayfası</li>
+            <li>Blog / yazı alanı</li>
+            <li>Daha geniş galeri</li>
+          </ul>
+          <a class="btn btn-primary" data-wa data-plan="Genişletilmiş Vitrin" href="https://wa.me/905434290908" target="_blank" rel="noopener">Bu paket için yaz</a>
+        </article>
       </div>
     </div>
   </section>
 
-  <hr class="divider wrap">
-
-  <section id="fiyat">
+  <section id="basla" style="padding-top:20px;">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Fiyat</span>
-        <h2>Şeffaf, sabit kapsamlı fiyatlandırma</h2>
-        <p>Gizli maliyet yok. Kurulum tek seferlik, domain ve barındırma bakımı yıllık yenilenir.</p>
+      <div class="builder">
+        <div class="intro">
+          <h2>İlk mesajı biz hazırlayalım</h2>
+          <p>İşletme türünüzü seçin, adınızı yazın. WhatsApp'ta hazır bir mesajla açılır; göndermeniz yeterli.</p>
+        </div>
+        <form id="builder" onsubmit="return false;">
+          <div class="field">
+            <span class="lab" id="lab-tur">İşletmeniz hangisine yakın?</span>
+            <div class="chips" role="group" aria-labelledby="lab-tur">
+              <button class="chip" type="button" aria-pressed="false" data-v="astrolog veya koç">Astrolog / koç</button>
+              <button class="chip" type="button" aria-pressed="false" data-v="kuaför veya güzellik salonu">Kuaför / güzellik</button>
+              <button class="chip" type="button" aria-pressed="false" data-v="kafe veya restoran">Kafe / restoran</button>
+              <button class="chip" type="button" aria-pressed="false" data-v="danışmanlık veya eğitim">Danışmanlık / eğitim</button>
+              <button class="chip" type="button" aria-pressed="false" data-v="butik üretim">Butik üretim</button>
+              <button class="chip" type="button" aria-pressed="false" data-v="yerel işletme">Diğer</button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="isim">Adınız veya işletme adınız (isteğe bağlı)</label>
+            <input class="input" id="isim" type="text" autocomplete="organization" placeholder="Örn. Ayşe Hanım Kuaför">
+          </div>
+          <p class="preview" aria-live="polite"><b>Mesajınız:</b> <span id="onizleme"></span></p>
+          <a class="btn btn-primary btn-lg" id="wa-send" href="https://wa.me/905434290908" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.92 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.67c2.23 0 4.32.87 5.9 2.45a8.23 8.23 0 0 1 2.43 5.85c0 4.56-3.72 8.27-8.29 8.27a8.27 8.27 0 0 1-4.21-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.56 3.72-8.27 8.29-8.27"/></svg>
+            WhatsApp'ta gönder
+          </a>
+        </form>
       </div>
-      <div class="price-grid">
-        <div class="price-card reveal">
-          <div>
-            <h3>Başlangıç Vitrini</h3>
-            <p>Tek sayfa: ana sayfa, hizmetler, iletişim ve galeri. Yukarıdaki kapsamın tamamı dahildir.</p>
-            <p class="price-tag" style="margin-top:16px;">4.500 TL kurulum · yılda 600 TL domain yenileme + bakım</p>
-          </div>
-          <a class="btn btn-primary price-cta" href="https://wa.me/905434290908" target="_blank" rel="noopener">Teklif İste</a>
-        </div>
-        <div class="price-card reveal">
-          <div>
-            <h3>Genişletilmiş Vitrin</h3>
-            <p>Çoklu sayfa: ayrı hizmetler sayfası, blog/yazı alanı ve daha geniş galeri.</p>
-            <p class="price-tag" style="margin-top:16px;">7.500 TL kurulum · yılda 750 TL domain yenileme + bakım</p>
-          </div>
-          <a class="btn btn-primary price-cta" href="https://wa.me/905434290908" target="_blank" rel="noopener">Teklif İste</a>
-        </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="sss">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Sık sorulan sorular</h2>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>Instagram'ım var, web sitesine gerçekten ihtiyacım var mı?</summary>
+          <div class="a">Instagram akışı hızlı unutur. Web sitesi hizmetlerinizi, konumunuzu ve iletişim bilginizi tek yerde, kalıcı olarak tutar. Sizi Google'da arayan biri de web sitenizi bulabilir.</div>
+        </details>
+        <details>
+          <summary>Teknik bilgim yok, yapabilir miyim?</summary>
+          <div class="a">Teknik bir şey yapmanız gerekmez. İşletmenizi, hizmetlerinizi ve varsa görsellerinizi kısa bir mesajla paylaşmanız yeterli. Taslağı biz hazırlarız, siz görüp onaylarsınız.</div>
+        </details>
+        <details>
+          <summary>Site ne kadar sürede yayına girer?</summary>
+          <div class="a">Birkaç gün içinde. Taslağı birlikte netleştirdikten ve onayınızı aldıktan sonra siteniz kendi alan adınızda canlıya alınır.</div>
+        </details>
+        <details>
+          <summary>Fiyata neler dahil?</summary>
+          <div class="a">Başlangıç Vitrini 4.500 TL kurulum ücretidir ve ana sayfa, hizmetler, WhatsApp ve Instagram yönlendirme, harita, fotoğraf galerisi, temel SEO ve mobil uyumlu tasarımı kapsar. Yıllık 600 TL ile domain yenileme ve site bakımı yapılır. Başka gizli ücret yoktur.</div>
+        </details>
+        <details>
+          <summary>Başlangıç ve Genişletilmiş Vitrin arasındaki fark nedir?</summary>
+          <div class="a">Başlangıç Vitrini tek sayfalık bir dijital kartvizit sitesidir. Genişletilmiş Vitrin 7.500 TL kurulum ve yılda 750 TL yenileme ile çok sayfalıdır: ayrı hizmetler sayfası, blog veya yazı alanı ve daha geniş galeri içerir.</div>
+        </details>
+        <details>
+          <summary>Sitem Google'da çıkar mı?</summary>
+          <div class="a">Her site, Google'da bulunmaya hazır temel SEO ayarlarıyla yayınlanır. Arama sıralaması rekabete ve zamana bağlıdır; bu yüzden belirli bir sıra vaadi vermeyiz.</div>
+        </details>
+        <details>
+          <summary>Hangi işletmeler için uygun?</summary>
+          <div class="a">Astrologlar, holistik koçlar, kuaför ve güzellik salonları, kafe ve restoranlar, danışmanlık ve eğitim verenler, el emeği ve butik üretim yapanlar ile yerel esnaf için uygundur.</div>
+        </details>
       </div>
     </div>
   </section>
@@ -708,45 +712,81 @@
 
 <footer id="iletisim">
   <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-cta reveal">
-        <span class="eyebrow">İletişim</span>
-        <h2>Vitrininizi birlikte açalım</h2>
-      </div>
-      <div class="footer-links reveal">
-        <a href="https://wa.me/905434290908" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.92 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.67c2.23 0 4.32.87 5.9 2.45a8.23 8.23 0 0 1 2.43 5.85c0 4.56-3.72 8.27-8.29 8.27a8.27 8.27 0 0 1-4.21-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.56 3.72-8.27 8.29-8.27M8.53 7.13c-.16 0-.43.06-.65.31s-.86.84-.86 2.05.88 2.38 1 2.54 1.74 2.77 4.28 3.79c2.12.85 2.55.68 3.01.64.46-.04 1.49-.61 1.7-1.19.21-.59.21-1.09.14-1.19s-.25-.16-.52-.29-1.6-.79-1.85-.88-.43-.14-.61.14-.7.88-.86 1.06-.32.2-.59.06a7.4 7.4 0 0 1-2.18-1.35 8.17 8.17 0 0 1-1.51-1.88c-.16-.27-.02-.42.12-.56.12-.12.27-.32.4-.48.13-.16.17-.27.26-.45.09-.19.04-.35-.02-.49s-.6-1.47-.83-2.01c-.22-.53-.44-.45-.6-.46z"/></svg>WhatsApp: 0543 429 09 08</a>
-        <a href="mailto:dreamdosima08@gmail.com"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="M3 6.5l9 6.2 9-6.2" stroke-linecap="round" stroke-linejoin="round"/></svg>dreamdosima08@gmail.com</a>
-        <a href="https://instagram.com/acik_vitrin" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg>Instagram: @acik_vitrin</a>
+    <div class="foot-grid">
+      <h2>Vitrininizi birlikte açalım</h2>
+      <div class="foot-links">
+        <a href="https://wa.me/905434290908" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.28-1.38a9.9 9.9 0 0 0 4.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.92 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2m0 1.67c2.23 0 4.32.87 5.9 2.45a8.23 8.23 0 0 1 2.43 5.85c0 4.56-3.72 8.27-8.29 8.27a8.27 8.27 0 0 1-4.21-1.15l-.3-.18-3.13.82.84-3.05-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.56 3.72-8.27 8.29-8.27"/></svg>WhatsApp: 0543 429 09 08</a>
+        <a href="mailto:dreamdosima08@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.2"/><path d="M3 6.5l9 6.2 9-6.2" stroke-linecap="round" stroke-linejoin="round"/></svg>dreamdosima08@gmail.com</a>
+        <a href="https://instagram.com/acik_vitrin" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1.15" fill="currentColor" stroke="none"/></svg>Instagram: @acik_vitrin</a>
       </div>
     </div>
-    <div class="footer-bottom">
+    <div class="foot-bottom">
       <span>© 2026 Açık Vitrin</span>
       <span>Kepenk hep açık.</span>
     </div>
   </div>
 </footer>
 
+<div class="sticky-cta"><a class="btn btn-primary btn-lg" data-wa href="https://wa.me/905434290908" target="_blank" rel="noopener">WhatsApp'tan yaz</a></div>
+
 <script>
-  // scroll reveal
-  const revealEls = document.querySelectorAll('.reveal');
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('is-visible');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  revealEls.forEach(el => io.observe(el));
+(function(){
+  var NUM='905434290908';
+  function wa(text){return 'https://wa.me/'+NUM+'?text='+encodeURIComponent(text);}
 
-  // remove shutter from flow after animation so it never blocks input
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      const shutter = document.querySelector('.shutter');
-      if(shutter) shutter.style.display = 'none';
-    }, 1300);
+  // genel WhatsApp butonları: hazır mesajla açılır
+  document.querySelectorAll('[data-wa]').forEach(function(a){
+    var plan=a.getAttribute('data-plan');
+    a.href=wa(plan
+      ? 'Merhaba, '+plan+' hakkında bilgi almak istiyorum.'
+      : 'Merhaba, web sitesi yaptırmak istiyorum. Bilgi alabilir miyim?');
   });
-</script>
 
+  // örnek taslak sekmeleri
+  var tabs=[].slice.call(document.querySelectorAll('.tab'));
+  function select(tab){
+    tabs.forEach(function(t){
+      var on=t===tab;
+      t.setAttribute('aria-selected',on);
+      t.tabIndex=on?0:-1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on;
+    });
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t);});
+    t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight')n=tabs[(i+1)%tabs.length];
+      if(e.key==='ArrowLeft')n=tabs[(i-1+tabs.length)%tabs.length];
+      if(n){e.preventDefault();n.focus();select(n);}
+    });
+  });
+
+  // mesaj hazırlayıcı
+  var chips=[].slice.call(document.querySelectorAll('.chip'));
+  var isim=document.getElementById('isim');
+  var onizleme=document.getElementById('onizleme');
+  var send=document.getElementById('wa-send');
+  var tur='';
+  function build(){
+    var who=isim.value.trim();
+    var m='Merhaba, '+(who?who+' için ':'')+'web sitesi yaptırmak istiyorum.'
+      +(tur?' İşletme türüm: '+tur+'.':'')+' Bilgi alabilir miyim?';
+    onizleme.textContent=m;
+    send.href=wa(m);
+  }
+  chips.forEach(function(c){
+    c.addEventListener('click',function(){
+      var was=c.getAttribute('aria-pressed')==='true';
+      chips.forEach(function(x){x.setAttribute('aria-pressed','false');});
+      c.setAttribute('aria-pressed',String(!was));
+      tur=was?'':c.getAttribute('data-v');
+      build();
+    });
+  });
+  isim.addEventListener('input',build);
+  build();
+})();
+</script>
 </body>
 </html>
